@@ -1,0 +1,126 @@
+\section{Plano de Trabalho}
+
+Neste capítulo será descrito o plano de trabalho que está guiando o desenvolvimento do presente projeto.
+
+\subsection{Metodologia}
+\label{development_methodology}
+
+Nesta seção será descrita a metodologia de desenvolvimento deste projeto. Ela é divida em dois métodos de desenvolvimento principais: para as ontologias e para o sistema web que suportará o processo de edição/visualização.
+
+\subsection{Ontologias}
+
+O conhecimento do domínio envolvido em Linked Data está em contínua ampliação, por este motivo faz necessário um enfoque na possibilidade de mudança na estrutura de exibição das Ontologias. Sua capacidade de representar o conhecimento de um domínio por meio de formatos, como a linguagem OWL, permiti separar o conhecimento das outras partes do sistema. Os modelos OWL permitem a compilação do conhecimento em sistemas de armazenamento e recuperação de informação, chamados triplestores, que são bancos de dados e que adicionam significado semântico aos seus dados. Neste sistema será apresentado a visualização e interação de Ontologias e Linked Data.
+
+\subsection{Sistema Web}
+
+Os componentes da arquitetura do sistema web são parte deste trabalho (interface gráfica) e parte de um outro trabalho de mestrado. A ideia é construir um software que possa ser reusados em outros \sigla{SAD}{Sistemas de Apoio a Decisão}, tendo ou não similaridade com esta pesquisa.
+
+\subsubsection{Groovy}
+O desenvolvimento do software será feito usando-se uma DSL baseada na linguagem Groovy \cite{Koenigetal2007}. Ou seja, essa DSL será uma extensão da linguagem Groovy. Groovy é uma linguagem que tem suporte ao desenvolvimento de DSLs. Isso inclui suporte a DSL Descriptors, arquivos Groovy que descrevem extensões domain-speciﬁc para o motor de inferência e assistente de conteúdo do plugin Groovy-Eclipse. Isso permite que a DSL criada tenha todo o suporte que o IDE Eclipse dá a linguagens como Java ou Groovy, como code completion, debugging, etc. Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para a criação de aplicações Web \cite{Judd2008}. O uso da DSL por especialistas em diversas areas e a utilização em conjunto com um SAD, deve permitir o seu aprimoramento.
+
+\subsubsection{Canvas e SVG} 
+Uma análise de tecnologias de gráficos vetoriais disponíveis nos últimos navegadores modernos, mostra que novos cenários podem ser criados usando tecnologias padrão da Web de uma forma interativa. Pensando nesse requisito foi feito um levantamento de caracteristicas entre duas técnologias bastante interessantes.
+
+O \sigla{SVG}{Scalable Vector Graphics} é conhecido como um modelo de elementos gráficos de modo retido persistindo em um modelo na memória. Análogo ao HTML, o SVG cria um modelo de objeto de elementos, atributos e estilos. Quando o elemento <svg> aparece em um documento HTML5, ele se comporta como um bloco alinhado e faz parte da árvore do documento HTML \cite{PatrickDengler2013}.
+
+O \sigla{Canvas}{Elemento HTML} é um bitmap com uma interface de programação de aplicativo (API) de elementos gráficos de modo imediato para desenhar. O Canvas é um modelo "dispare e esqueça" que renderiza os elementos gráficos diretamente em seu bitmap e depois, subsequentemente, não tem nenhuma noção das formas desenhadas; apenas o bitmap resultante permanece \cite{PatrickDengler2013}.
+
+Uma forma de pensar nisso é que o Canvas lembra a API Windows GDI, em que você desenha elementos gráficos programaticamente em uma janela e o SVG lembra marcação HTML com elementos, estilos, eventos e capacidade de programação baseada no DOM. O Canvas é procedimental, enquanto o SVG é declarativo.
+
+Na \autoref{tab:ComparacaoCanvasSVG} é demonstrado uma comparação entre Canvas e SVG.
+
+\begin{table}[h!]
+    \centering
+    \caption{Comparação Canvas x SVG}
+    \label{tab:ComparacaoCanvasSVG}
+    \begin{tabular}{|c|c|} \hline
+        Canvas &  SVG & \hline
+        Baseado em pixel (o canvas é essencialmente um elemento de imagem com uma API de desenho) & 
+        Baseado em modelo de objeto (elementos do SVG são similares a elementos HTML) & \hline
+        Elemento HTML único similar a <img> no comportamento & Múltiplos elementos gráficos que se tornam parte do Modelo de objeto de documento (DOM) & \hline
+        Apresentação visual criada e modificada programaticamente através de script & 
+        Apresentação visual criada com marcação e modificada por CSS ou programaticamente através de script & \hline
+        A interação modelo de evento/usuário não é refinada — apenas no elemento canvas; interações devem ser programadas manualmente a  partir de coordenadas do mouse &
+        A interação modelo de evento/usuário é baseada em objeto no nível de elementos gráficos primitivos — linhas, retângulos, caminhos &
+    \end{tabular}
+\end{table}
+
+\subsection{Desenvolvimento}
+Será necessário a aplicação de alguma metodologia de desenvolvimento de software. Neste cenário, existem vários métodos e metodologias que permitem um desenvolvimento ágil de software. Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos e geração de protótipos facilmente adaptáveis às mudanças. Exemplos de métodos ágeis são: “Mockups”, “User Stories”, “Scenarios”, “Storyboards” e “Use Cases”, exemplos de metodologias ágeis são: “SCRUM” ou “XP eXtreme Programming”.
+
+Uma das etapas mais importantes dos desenvolvimentos ágeis é o levantamento de requisitos. Essa etapa tem como objetivo definir as características do software e pode ser realizada múltiplas vezes. Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam em  cada ciclo para cumprir os requisitos. O deste sistema será realizado por meio de metodologias ágeis de desenvolvimento de software, principalmente serão utilizadas algumas práticas da metodologia SCRUM \cite{SchwaberBeedle2002}. Também será usado o enfoque UserCentered Design. Nesse sentido, está sendo desenvolvido primeiramente um mockup da interface gráﬁca do sistema, o qual será o meio de interação com os usuários para a elaboração das Ontologias. Quando o mockup for validado, será iniciado o desenvolvimento de um protótipo da interface gráfica que permitirá determinar os requisitos funcionais. 
+
+\subsection{Atividades Previstas e Cronograma}
+
+A seguir, são descritas as principais atividades a serem realizadas para o desenvolvimento deste trabalho, visando cumprir os objetivos e tendo como referência a metodologia proposta. A duração de cada uma das atividades está descrita no cronograma de atividades \autoref{tab:atividades}. As seguintes atividades foram previstas para ter início em Agosto de 2015 e duração de 24 meses: 
+
+\begin{itemize}
+  \label{tab:atividades}
+  \item \textbf{A1}- Obtenção de créditos referente as disciplinas do programa de mestrado.
+  \item \textbf{A2}- Exame de Proficiência na língua inglesa.
+  \item \textbf{A3}- Levantamento bibliográfico sobre a área de pesquisa.
+  \item \textbf{A4}- Estudo sobre Web Semântica.
+  \item \textbf{A5}- Estudo sobre Ontologias.
+  \item \textbf{A6}- Desenvolvimento da ontologia do software.
+  \item \textbf{A7}- Desenvolvimento dos controles visuais.
+  \item \textbf{A8}- Qualificação: redação da monografia de qualificação.
+  \item \textbf{A9}- Exame de Qualificação.
+  \item \textbf{A10}- Implementação do primeiro protótipo.
+  \item \textbf{A11}- Testes preliminares, refinamento e reimplementação.
+  \item \textbf{A12}- Testes e validação: estudos de casos e refinamentos.
+  \item \textbf{A13}- Redação da Dissertação.
+  \item \textbf{A14}- Redação e submissão de artigos com os resultados obtidos.
+  \item \textbf{A15}- Defesa.
+
+\end{itemize}
+
+A \autoref{tab:cronograma} apresenta o cronograma de execução das atividades.
+
+\begin{table}[h!]
+    \centering
+    \caption{Cronograma do projeto}
+    \label{tab:cronograma}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
+        Ativ. &
+        \multicolumn{2}{|c|}{2015} &
+        \multicolumn{4}{|c|}{2016} &
+        \multicolumn{2}{|c|}{2017} \\ \hline
+               &
+         3 Tri &
+         4 Tri &
+         1 Tri &
+         2 Tri &
+         3 Tri &
+         4 Tri &
+         1 Tri &
+         2 Tri \\ \hline
+         A1 & . & ... & ... & ... & ... & ... & & \\ \hline
+         A2 & & ... & ... & ... & ... & & & \\ \hline
+         A3 & & & ... & ... & ... & ... & & \\ \hline
+         A4 & & & ... & ... & ... & ... & & \\ \hline
+         A5 & & & .. & ... & ... & ... & & \\ \hline
+         A6 & & & & . & .. & ... & & \\ \hline
+         A7 & & & & . & .. & ... & & \\ \hline
+         A8 & & & & & ... & & & \\ \hline
+         A9 & & & & & & ... & & \\ \hline
+         A10 & & & & & & .. & & \\ \hline
+         A11 & & & & & & .. & ... & ... \\ \hline
+         A12 & & & & & & .. & ... & ... \\ \hline
+         A13 & & & & & & ... & ... & ...\\ \hline
+         A14 & & & & & & ... & & ...\\ \hline
+         A15 & & & & & & & & . \\ \hline
+         
+    \end{tabular}
+\end{table}
+
+\subsection{Atividades Concluídas até o Momento}
+
+No cronograma, todas as atividades de A1 a A7 estão sendo concluídas. Além disso, a redação e submissão de artigos com os resultados obtidos, estão sendo realizadas.
+
+\section{Dificuldades e Limitações}
+
+Em virtude de minha formação como tecnologo, tive muita dificuldade no inicio, tendo que pesquisar constantemente com referência a varios assuntos ligados a pesquisa.
+
+Varias das linguagens abordadas não era de meu conhecimento e esse processo de aprendizado foi mais despendioso do que o inicialmente planejado, além é claro, da falta de tempo dispendido para isso, pois tenho emprego fixo e isso acabou gerando uma dificuldade maior.
+
+Tirando esses pequenos impedimentos iniciais, o processo esta sendo desenvolvido de forma bem elaborada, dentro do cronograma elaborado.
