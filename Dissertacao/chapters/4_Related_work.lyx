@@ -519,7 +519,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="8">
-<features tabularvalignment="middle" tabularwidth="100col%">
+<features tabularvalignment="middle" tabularwidth="90col%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -643,7 +643,7 @@ SIM
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+NÃO
 \end_layout
 
 \end_inset
