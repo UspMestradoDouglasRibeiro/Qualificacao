@@ -1,0 +1,938 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\begin_preamble
+\KOMAoptions{parskip=half}
+\end_preamble
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Após uma pesquisa bibliográfica foi possivel constatar que existem varios
+ software que se propoem a trabalhar com Ontologias, e foi encontrado somente
+ um software com a capacidade de visualização dessas ontologias em formato
+ de grafos.
+\end_layout
+
+\begin_layout Section
+Protégé
+\end_layout
+
+\begin_layout Standard
+O Protégé
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://protege.stanford.edu/products.php
+\end_layout
+
+\end_inset
+
+ é uma plataforma livre, de código aberto que fornece uma comunidade de
+ usuários em crescimento, com um conjunto de ferramentas para a construção
+ de modelos de dominio e aplicações baseados no conhecimento de ontologias.
+ Sua interface é baseada em formularios conforme é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Protégé"
+
+\end_inset
+
+.
+ Pelo fato de ser baseado em formulários, a complexidade aumenta consideravelmen
+te e também este softwware não é via Web, portanto, existe a necessidade
+ de instalação do mesmo na maquina.
+ Apesar da interface necessitar de um conhecimento mais aprimorado, os recursos
+ oferecidos pelo Protégé não são encontrados em outros softwares.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/Protege_3.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela Principal do Software Protégé 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Protégé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seu ambiente de edição ontologia é rica em recursos e com suporte total
+ para o OWL 2, e de ligações diretas em memória para a recuperação lógica
+ via reasoners como o HermiT e Pellet.
+ Ele suporta a criação e edição de uma ou mais ontologias em um único espaço
+ de trabalho através de uma interface de usuário totalmente personalizável.
+ Suas ferramentas de visualização permitem a navegação entre as relações
+ da ontologia e os apoios auxiliares permitem uma explicação no rastreamento
+ de inconsistências.
+ 
+\end_layout
+
+\begin_layout Subsection
+OWLViz
+\end_layout
+
+\begin_layout Standard
+O OWLViz é projetado para ser usado com o editor Protege-OWL.
+ Ele permite hierarquias de classe em uma Ontologia OWL para ser visto e
+ incrementalmente navegado, permitindo a comparação da hierarquia de classes
+ afirmada e a hierarquia de classe inferida.
+ O OWLViz integra com o editor Protege-OWL, utilizando o mesmo esquema de
+ cores de modo que as classes primitivas e definidas podem ser distinguidos,
+ mudanças computados para a hierarquia de classes pode ser visto claramente,
+ e os conceitos inconsistentes são destacadas em vermelho, tem a facilidade
+ para salvar ambos os pontos de vista afirmados e inferidos da hierarquia
+ de classes para vários formatos gráficos, incluindo PNG, JPEG, e SVG.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OWLViz"
+
+\end_inset
+
+ pode ser observado a Tela Principal do Protégé com o uso do plugin OWLViz.
+ Assim como o Protégé, é necessário a instalação deste plugin no computador,
+ alem disse, tem que se observar a versão do plugin se é compativel com
+ a versão do Protégé instalada.
+ Caso faça atualização no software Protégé, este plugin terá que ser atualizado
+ também.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/OwlViz.jpg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela Principal do Software Protégé com o Plugin OWLViz 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OWLViz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+WebProtégé
+\end_layout
+
+\begin_layout Standard
+WebProtégé é um ambiente de desenvolvimento de ontologias para a Web que
+ torna mais fácil para criar, carregar, modificar e compartilhar ontologias
+ para visualização de colaboração e edição.
+ Ele apoia plenamente as últimas atualizações da Web Ontology Language 2
+ (OWL).
+ Com sua interface de usuário altamente configurável, é possivel criar o
+ ambiente perfeito para iniciantes e experts, os recursos de colaboração,
+ incluindo compartilhamento e permissões, notas e discussões, entre outros.
+ Ele é compativel com os mais variados tipos, incluindo, RDF / XML, Turtle,
+ OWL / XML, OBO, e outros formatos disponíveis para upload e download de
+ ontologia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/WebProtégé.jpg
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela Principal do WebProtégé 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WebProtégé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como pode se observar na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WebProtégé"
+
+\end_inset
+
+, o WebProtégé tem as mesmas caracteristicas da versão Desktop, isso permite
+ uma curva de aprendizado muito baixa.
+ Por ser desenvolvido para Web, permite o compartilhamento de ontologias
+ muito mais facilmente, pois basta ter uma conta no site para poder salvar
+ e criar projetos com as mesmas caracteristicas da versão Desktop.
+\end_layout
+
+\begin_layout Subsection
+WebProtégé: Supporting the Creation of ICD-11
+\end_layout
+
+\begin_layout Standard
+WebProtege é uma interface Web altamente personalizável para navegação e
+ edição de ontologias, que fornece suporte para a colaboração.
+ Utilizando essa ferramenta, foi realizada uma personalização do WebProtégé
+ para apoiar a Organização Mundial da Saúde com o desenvolvimento colaborativo
+ da 11ª revisão da Classificação Internacional de Doenças (CID-11).
+ A Classificação Internacional de Doenças (CID) é um padrão global pública
+ que organiza e classifica informações sobre doenças e problemas de saúde
+ relacionados, as Autoridades de Saúde usam o CID em todos os países membros
+ das Nações Unidas para compilar estatísticas básicas de saúde, para monitorar
+ os gastos relacionados com a saúde, e para informar e auxiliar nas decisões
+ políticas.
+ Nos Estados Unidos, o uso do CID é também uma exigência para todo o faturamento
+ médico e, portanto, tem um grande impacto sobre muitos aspectos e cuidados
+ de saúde em todo o mundo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/SoftwareICD11.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela Principal do Software WebProtégé modificado para dar suporte ao ICD-11
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ICD-11"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ICD-11"
+
+\end_inset
+
+ mostra um diagrama de arquitetura do WebProtégé utilizado no contexto CID.
+ É usado no lado cliente os serviços do servidor do WebProtégé para exibir
+ informações paa o usuário, e no lado servidor, ele se conecta ao ambiente
+ de colaboração para acessar a ontologia e os serviços de colaboração.
+ Em seu repositório de ontologias fica armazenado as ontologias disponíveis
+ para os clientes.
+ O WebProtégé acessa o BioPortal que é um repositório de aproximadamente
+ 200 ontologias biomédias e terminologias, na qual fornece acesso via serviços
+ REST e assim, permite realizar pesquisas em diferentes ontologias e ter
+ acesso a informação sobre os termos especificos.
+\end_layout
+
+\begin_layout Section
+WebVOWL
+\end_layout
+
+\begin_layout Standard
+O VOWL
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.http://vowl.visualdataweb.org/
+\end_layout
+
+\end_inset
+
+ é uma linguagem visual bem especificada para a representação orientada
+ para o utilizador de ontologias.
+ Ele define representações gráficas para a maioria dos elementos do Web
+ Ontology Language (OWL), que são combinados para um layout gráfico direcionado,
+ visualizando a ontologia conforme é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WebVOWL"
+
+\end_inset
+
+.
+ Em contraste com trabalhos relacionados, VOWL aponta para uma representação
+ intuitiva e abrangente que também é compreensível para os usuários menos
+ familiarizados com ontologias.
+ Ele é um aplicativo independente inteiramente baseado em padrões web abertos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/WebVOWL.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela Principal do Software WebVOWL
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WebVOWL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O VOWL serve unicamente como visualizador de ontologia em formato de grafos,
+ não sendo possivel sua edição.
+ Outra situação, no VOWL é que também não é possivel a resolução da ontologia
+ (REASONER), pois o mesmo não tem tal recurso.
+\end_layout
+
+\begin_layout Section
+Considerações Finais
+\end_layout
+
+\begin_layout Standard
+Com base nos trabalhos relacionados apresentados, a Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:ComparacaoSoftware"
+
+\end_inset
+
+demostra todas as caracteristicas e funcionalidades de cada software.
+ O Plugin OWLViz, utiliza-se do Protégé, e portanto as caracteristicas de
+ Reasoner, são trabalhadas aqui como do próprio Protégé e não do plugin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle" tabularwidth="100col%">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do Software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Função
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reasoner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Web
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OWL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preenchimento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Protégé
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visualização/Escrita
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+formulários
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WebProtégé
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visualização/Escrita
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+formulário
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OWLViz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plugin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visualização
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NÃO*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NÃO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+gráfico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VOWL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visualização
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NÃO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SIM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+gráfico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela comparativa de softwares 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ComparacaoSoftware"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

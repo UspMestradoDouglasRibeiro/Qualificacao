@@ -1,0 +1,2387 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+\KOMAoptions{parskip=half}
+\end_preamble
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Neste capítulo será descrito o plano de trabalho que está e continuara guiando
+ o desenvolvimento do presente projeto
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+Nesta seção será descrita a metodologia que guiará o desenvolvimento deste
+ projeto, a qual é subdivida em dois desenvolvimentos principais: as ontologias
+ e o sistema web que suportará o processo de avaliação da sustentabilidade
+ de sistemas agrícolas.
+\end_layout
+
+\begin_layout Subsection
+Ontologias
+\end_layout
+
+\begin_layout Standard
+O conhecimento do domínio envolvido no sistema Sustenagro está em contínua
+ construção, pelo qual é necessário um enfoque que permita realizar mudanças
+ na estrutura e no conteúdo usado no sistema durante e depois do desenvolvimento
+, as ontologias (ciências da computação) permitem representar o conhecimento
+ de um domínio de discurso por meio de formatos como a linguagem OWL, permitindo
+ separar o conhecimento das outras camadas do sistema.
+\end_layout
+
+\begin_layout Standard
+Os modelos OWL permitem a implementação deles em sistemas de armazenamento
+ e recuperação de informação, isto mediante uma triplestore que realizará
+ as funções de um banco de dados e acrescentará significado semântico aos
+ dados.
+\end_layout
+
+\begin_layout Standard
+Neste projeto serão desenvolvidas as seguintes ontologias:
+\end_layout
+
+\begin_layout Itemize
+Ontologia de avaliação da sustentabilidade no sistema produtivo de cana-de-açúca
+r: esta ontologia vai representar o conhecimento sobre sustentabilidade
+ na cultura de cana-de-açúcar e o conhecimento sobre metodologias de avaliação
+ de sustentabilidade, fornecendo um modelo de dados ao sistema SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+Ontologia de representação de controles de usuário: a finalidade desta ontologia
+ é dar suporte à interação dos usuários com os controles gráficos relacionados
+ com os indicadores, este é um requisito funcional do software, uma vez
+ que os indicadores podem ter diversos tipos de unidades e para cada tipo
+ existe uma representação particular, por exemplo para representar um indicador
+ de sustentabilidade do tipo numérico é recomendável usar um controle visual
+ tipo spinner.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Methodology"
+
+\end_inset
+
+ é apresentada a proposta metodológica que guiará o desenvolvimento das
+ ontologias, dita metodologia tem natureza cíclica, gerando em cada ciclo
+ um protótipo funcional.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/fluxograma.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia de definição das ontologias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Methodology"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sistema web
+\end_layout
+
+\begin_layout Standard
+Existem múltiplos métodos e metodologias que permitem um desenvolvimento
+ ágil de software.
+ Nesse contexto o termo ágil refer-se ao desenvolvimento em tempos curtos
+ e geração de prototipos facilmente adaptáveis às mudanças.
+ Exemplos de métodos ágeis são: “Mockups”, “User stories”, “Scenarios”,
+ “Storyboards” e “Use cases”, exemplos de metodologias ágeis são: “SCRUM”
+ ou “XP Xtreme Programming”.
+\end_layout
+
+\begin_layout Standard
+Uma das etapas mais importantes dos desenvolvimentos ágeis é o levantamento
+ de requisitos.
+ Nessa etapa tem-se como objetivo definir as caracteristicas do software
+ e pode ser realizada múltiplas vezes, isso ocorre pois as metodologias
+ ágeis são cíclicas e os protótipos mudan em cada ciclo para cumplir os
+ requisitos.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento do sistema web será realizado por meio de metodologias
+ ágeis de desenvolvimento de software, principalmente serão utilizadas práticas
+ da metodologia SCRUM 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schwaber2002gile"
+
+\end_inset
+
+, isto com a finalidade de garantir um desenvolvimento com adaptação às
+ mudanças do domínio, também será usado o enfoque User-Centered Design.
+\end_layout
+
+\begin_layout Standard
+Neste sentido será desenvolvido primeiramente um Mockup da interface gráfica
+ do sistema, o qual será o meio de comunicação com o cliente para determinar
+ as funcionalidades basicas do sistema, quando o mockup for validado será
+ iniciado o desenvolvimento de um protótipo da interface gráfica do usuário,
+ que permitirá determinar os requisitos funcionais.
+\end_layout
+
+\begin_layout Standard
+A arquitetura software no lado do servidor será composta pelas duas ontologias
+ e por uma DSL que será desenhada para dar suporte às principais funcionalidades
+ por parte do usuário administrador, que consistem em definir os indicadores,
+ índices e metodologias de avaliação da sustentabilidade.
+ Dita DSL suportará a definição dos controles de usuário da interface gráfica
+ que serão gerados segundo o tipo de dado que requeira cada indicador, desta
+ forma será possível adaptar a interface à natureza dos dados do domínio.
+\end_layout
+
+\begin_layout Standard
+A arquitetura do sistema Sustenagro, será composta no lado do servidor das
+ duas ontologias, a DSL e vários Web Services que em conjunto vão suportar
+ o processo de avaliação da sustentabilidade, Baseando-se na DSL pode-se
+ suportar um sistema gerador de interfaces gráficas para conceder usabilidade
+ e flexibilidade ao sistema, esta última característica constitui uma nova
+ proposta de desenvolvimento de sistemas especialistas que permitem uma
+ adaptação às mudanças dos conceitos do domínio.
+\end_layout
+
+\begin_layout Standard
+Cada vez que sejam desenvolvidos cada componente de SustenAgro se realizarão
+ diversos testes para validar as funcionalidades do sistema, este processo
+ será realizado com os especialistas para refinar as funcionalidades do
+ sistema de acordo com os requisitos manifestados.
+\end_layout
+
+\begin_layout Standard
+A metodologia proposta para a construção do sistema web é a seguinte:
+\end_layout
+
+\begin_layout Enumerate
+Levantamento de requisitos
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+User stories: definição junto com o product owner das historias de usuário.
+\end_layout
+
+\begin_layout Enumerate
+Scenarios: permite a descrição das funcionalidades do sistema desde a perspectiv
+a do usuário.
+\end_layout
+
+\begin_layout Enumerate
+Storyboard: permite a visualização geral de uma funcionalidade do sistema.
+\end_layout
+
+\begin_layout Enumerate
+Mockups: é uma representação de um produto com a finalidade de 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Enumerate
+
+\series bold
+!!Ainda falta mexer com esta parte!!
+\series default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Recuperação dos dados dos repositórios FAO Linked Data
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FAO Linked Data"
+description "Food and Agriculture Organization of the United Nations (FAO) Linked Data"
+
+\end_inset
+
+ e AGRIS referente aos locais que foram realizadas coletas de espécimes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Análise dos dados de baixa qualidade, ou seja, dados que não tem informações
+ importantes, por exemplo, localidade e município
+\end_layout
+
+\begin_layout Enumerate
+Verificação do número de dados imprecisos e exibição dos mesmos em um mapa
+\end_layout
+
+\begin_layout Enumerate
+Verificação do número de dados que contém informações sobre local, latitude,
+ longitude
+\end_layout
+
+\begin_layout Enumerate
+Verificação da quantidade de dados que possuem informações de latitude e
+ longitude antes e depois do uso de GPS por biólogos em coletas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
+\end_layout
+
+\begin_layout Enumerate
+Implementação de um método para agrupar todos os dados dos repositórios
+ SpeciesLink e GBIF e realizar a resolução de topônimos utilizando técnicas
+ de Recuperação de Informação Geográfica e ontologias
+\end_layout
+
+\begin_layout Enumerate
+Aprimoramento das informações geográficas ausentes nos dados do SpeciesLink
+ e GBIF
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Utilização dos dados referente aos repositórios externos para melhorar os
+ registros das localidades dos repositórios SpeciesLink e GBIF
+\end_layout
+
+\begin_layout Enumerate
+Criação um método para sumarizar as coordenadas geográficas de acordo com
+ a abordagem da Lei de Linus
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verificação da quantidade de dados que tiveram suas informações aprimoradas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Contagem dos dados que não contém informações sobre latitude, longitude
+ e foram recuperados
+\end_layout
+
+\begin_layout Enumerate
+Contagem dos dados que possui informações geográficas recuperadas e eram
+ muito velhos, ou seja, antes do uso de GPS por biólogos em coletas
+\end_layout
+
+\begin_layout Enumerate
+Análise dos resultados dos passos a) e b) anteriores utilizando o teste
+ t de Student, para verificar o quão boa foi a abordagem utilizada
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mapeamento dos dados para uma 
+\shape italic
+triplestore
+\shape default
+ utilizando ontologias 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definição das triplas em RDF, que deveram possuir um sujeito, predicado
+ e objeto para cada localidade.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mapeamento de coordenadas geográficas para GeoSPARQL 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construção de uma base de teste com informações sobre qual consulta representa
+ uma localidade
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Construção de consultas semânticas e verificação de resultados utilizando
+ as medidas de precisão, revocação e F1 
+\end_layout
+
+\begin_layout Enumerate
+Realização da mesma abordagem do passo a) para os repositórios DBpedia e
+ Geonames, com intuito de verificar a viabilidade para expansão de consultas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Desenvolvimento de uma interface que permita aos biólogos inserir dados
+ no 
+\shape italic
+Gazetteer 
+\shape default
+por meio de mapas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos inserir lugares usando
+ GeoTAGS
+\end_layout
+
+\begin_layout Enumerate
+Agrupamento dos dados inseridos e aprimoramento dos dados referentes a localidad
+es que são similares.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos inserirem links do
+ DBpedia, quando os mesmos existirem, para auxiliar no crescimento da 
+\shape italic
+Web of Data
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos verificarem a acurácia
+ dos links sobre a DBpedia inseridos no 
+\shape italic
+Gazetteer
+\shape default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verificação do número de lugares inseridos pelos usuários e qualidade dos
+ dados 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Verificação da média de usuários que concordam com as coordenadas geográficas
+\end_layout
+
+\begin_layout Enumerate
+Verificação da média de usuários que concordam com as informações de 
+\emph on
+Linked Open Data
+\emph default
+ presentes no 
+\shape italic
+Gazetteer
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Verificação da quantidade de dados que tiveram suas informações aprimoradas
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o que foi listada na etapa 5?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Atividades previstas e Cronograma
+\end_layout
+
+\begin_layout Standard
+A seguir, são descritas as principais atividades previstas a serem realizadas
+ para o desenvolvimento deste trabalho, visando cumprir os objetivos e tendo
+ como referência a metodologia proposta.
+ A duração de cada uma das atividades está descrita no cronograma de atividades.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="9">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ativ.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 Tri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 Tri
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+..
+\size footnotesize
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+..
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+.
+\size footnotesize
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+..
+\size footnotesize
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+..
+\size footnotesize
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+..
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\size largest
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cronograma do projeto.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cronograma."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+As seguintes atividades estão previstas, com início em Fevereiro de 2014
+ e duração de 24 meses, conforme o cronograma a seguir: 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A1 - Obtenção de créditos referente as disciplinas do programa de mestrado.
+ 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A2 - Exame de proficiência na língua portuguesa.
+\end_layout
+
+\begin_layout Itemize
+A3 - Levantamento bibliógrafo sobre a área de pesquisa.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A4 - Estudo sobre web semântica e ontologias.
+\end_layout
+
+\begin_layout Itemize
+A5 - Estudo sobre sistemas de recomendação.
+\end_layout
+
+\begin_layout Itemize
+A6 - Desenvolvimento da ontologia de SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A7 - Exame de proficiência na língua inglesa.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A8 - Análise das informações do Banco de dados do FAO Linked Data e AGRIS.
+\end_layout
+
+\begin_layout Itemize
+A9 - Qualificação: redação da monografia de qualificação, incluindo detalhamento
+ do projeto.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A10 - Exame de Qualificação (apresentação da proposta à Comissão Examinadora).
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A11 - Implementação do protótipo SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A12 - Testes preliminares, reﬁnamento das funções do sistema especialista,
+ ajustes.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A13 - Testes e validação: estudos de caso e reﬁnamento.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A14 - Redação da dissertação.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A15 - Redação e submissão de artigos com os resultados obtidos.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+A16 - Defesa.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+A tabela 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:Cronograma."
+
+\end_inset
+
+ apresenta o cronograma de execução deste projeto de mestrado.
+ 
+\end_layout
+
+\begin_layout Section
+Atividades concluídas até o momento
+\end_layout
+
+\begin_layout Standard
+Quanto a metodologia proposta para desenvolvimento do sistema especialista
+ , os passos 1 ao 9 já foram concluídos, necessitando apenas alguns ajustes
+ e integração das novas funcionalidades que serão implementadas no passo
+ 10.
+ No cronograma, todas as atividades de A1 a A6 foram concluídas.
+ Além disso, a redação e submissão de artigos com os resultados obtidos,
+ estão sendo realizadas.
+\end_layout
+
+\begin_layout Section
+Resultados esperados
+\end_layout
+
+\begin_layout Itemize
+A ontologia de SustenAgro que será a base conceitual e tecnológica de todo
+ o sistema e integrará o conhecimento da sustentabilidade e do sistema produtivo
+ de cana-de-açúcar
+\end_layout
+
+\begin_layout Itemize
+DSL de SustenAgro que flexibilizará a definição da interface de usuário
+ por parte dos administradores do sistema
+\end_layout
+
+\begin_layout Itemize
+Sistema especialista integrado com as tecnologias da Web Semantica, para
+ permitir a realização de consultas complexas que requerem conhecimento
+ semântico e que isto facilita o processo de análises da informação por
+ parte dos usuários
+\end_layout
+
+\begin_layout Itemize
+Arquitetura para sistemas de avaliação baseados em conhecimento de domínios
+ específicos
+\end_layout
+
+\begin_layout Section
+Dificuldades e Limitações
+\end_layout
+
+\begin_layout Standard
+Até o presente momento, foi evidenciado como dificuldade para desenvolvimento
+ do projeto, as escassas fontes de informação que forneçam uma inter-relação
+ entre sistemas de produção agrícola e sustentabilidade, só foi possível
+ encontrar fontes de informação especializada em cada área do conhecimento
+ de maneira separada, outro problema é a falta de dados resultantes da aplicação
+ dos indicadores de sustentabilidade fornecidos pela Embrapa, devido a que
+ eles são os que instanciam o sistema de armazenamento e recuperação de
+ informação.
+\end_layout
+
+\end_body
+\end_document

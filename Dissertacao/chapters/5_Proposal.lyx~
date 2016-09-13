@@ -1,0 +1,761 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\begin_preamble
+\KOMAoptions{parskip=half}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Neste capítulo será descrito o plano de trabalho que está guiando o desenvolvime
+nto do presente projeto.
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+A metodologia utilizada para o desenvolvimento bem como as ferramentas seguem
+ os padrão de desenvolvimento de software descrito na seção 4.3.
+\end_layout
+
+\begin_layout Section
+Ferramentas a serem Utilizadas
+\end_layout
+
+\begin_layout Standard
+Os componentes da arquitetura do sistema web são parte deste trabalho (interface
+ gráfica) e parte de um outro trabalho de mestrado.
+ A ideia é construir um software que possa ser reusados em outros SAD, tendo
+ ou não similaridade com esta pesquisa.
+\end_layout
+
+\begin_layout Subsection
+Groovy
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento do software será feito usando-se uma DSL baseada na linguagem
+ Groovy 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "koenig2007groovy"
+
+\end_inset
+
+.
+ Ou seja, essa DSL será uma extensão da linguagem Groovy.
+ Groovy é uma linguagem que tem suporte ao desenvolvimento de DSLs.
+ Isso inclui suporte a DSL Descriptors, arquivos Groovy que descrevem extensões
+ domain-speciﬁc para o motor de inferência e assistente de conteúdo do plugin
+ Groovy-Eclipse.
+ Isso permite que a DSL criada tenha todo o suporte que o IDE Eclipse dá
+ a linguagens como Java ou Groovy, como code completion, debugging, etc.
+ Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
+ a criação de aplicações Web 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "judd2008beginning"
+
+\end_inset
+
+.
+ O uso da DSL por especialistas em diversas areas e a utilização em conjunto
+ com um SAD, deve permitir o seu aprimoramento.
+\end_layout
+
+\begin_layout Subsection
+Canvas e SVG
+\end_layout
+
+\begin_layout Standard
+Uma análise de tecnologias de gráficos vetoriais disponíveis nos últimos
+ navegadores modernos, mostra que novos cenários podem ser criados usando
+ tecnologias padrão da Web de uma forma interativa.
+ Pensando nesse requisito foi feito um levantamento de caracteristicas entre
+ duas técnologias bastante interessantes.
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SVG"
+description "Scalable Vector Graphics"
+
+\end_inset
+
+ é conhecido como um modelo de elementos gráficos de modo retido persistindo
+ em um modelo na memória.
+ Análogo ao HTML, o SVG cria um modelo de objeto de elementos, atributos
+ e estilos.
+ Quando o elemento <svg> aparece em um documento HTML5, ele se comporta
+ como um bloco alinhado e faz parte da árvore do documento HTML 
+\backslash
+cite{PatrickDengler2013}.
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Canvas"
+description "Elemento HTML"
+
+\end_inset
+
+ é um bitmap com uma interface de programação de aplicativo (API) de elementos
+ gráficos de modo imediato para desenhar.
+ O Canvas é um modelo "dispare e esqueça" que renderiza os elementos gráficos
+ diretamente em seu bitmap e depois, subsequentemente, não tem nenhuma noção
+ das formas desenhadas; apenas o bitmap resultante permanece 
+\backslash
+cite{PatrickDengler2013}.
+\end_layout
+
+\begin_layout Standard
+Uma forma de pensar nisso é que o Canvas lembra a API Windows GDI, em que
+ você desenha elementos gráficos programaticamente em uma janela e o SVG
+ lembra marcação HTML com elementos, estilos, eventos e capacidade de programaçã
+o baseada no DOM.
+ O Canvas é procedimental, enquanto o SVG é declarativo.
+\end_layout
+
+\begin_layout Standard
+Na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Comparativo-entre-Canvas"
+
+\end_inset
+
+ é demonstrado uma comparação entre Canvas e SVG.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Canvas-SVG.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparativo entre Canvas e SVG 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Comparativo-entre-Canvas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Desenvolvimento
+\end_layout
+
+\begin_layout Standard
+Será necessário a aplicação de alguma metodologia de desenvolvimento de
+ software.
+ Neste cenário, existem vários métodos e metodologias que permitem um desenvolvi
+mento ágil de software.
+ Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
+ e geração de protótipos facilmente adaptáveis às mudanças.
+ Exemplos de métodos ágeis são: “Mockups”, “User Stories”, “Scenarios”,
+ “Storyboards” e “Use Cases”, exemplos de metodologias ágeis são: “SCRUM”
+ ou “XP eXtreme Programming”.
+\end_layout
+
+\begin_layout Standard
+Uma das etapas mais importantes dos desenvolvimentos ágeis é o levantamento
+ de requisitos.
+ Essa etapa tem como objetivo definir as características do software e pode
+ ser realizada múltiplas vezes.
+ Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
+ em cada ciclo para cumprir os requisitos.
+ O deste sistema será realizado por meio de metodologias ágeis de desenvolviment
+o de software, principalmente serão utilizadas algumas práticas da metodologia
+ SCRUM 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "schwaber2002gile"
+
+\end_inset
+
+.
+ Também será usado o enfoque UserCentered Design.
+ Nesse sentido, está sendo desenvolvido primeiramente um mockup da interface
+ gráﬁca do sistema, o qual será o meio de interação com os usuários para
+ a elaboração das Ontologias.
+ Quando o mockup for validado, será iniciado o desenvolvimento de um protótipo
+ da interface gráfica que permitirá determinar os requisitos funcionais.
+ 
+\end_layout
+
+\begin_layout Subsection
+Atividades Previstas e Cronograma
+\end_layout
+
+\begin_layout Standard
+A seguir, são descritas as principais atividades a serem realizadas para
+ o desenvolvimento deste trabalho, visando cumprir os objetivos e tendo
+ como referência a metodologia proposta.
+ As atividades da Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Atividades-Previstas"
+
+\end_inset
+
+foram previstas para ter início em Agosto de 2015 e com duração de 24 meses.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+- 
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sigla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atividades a serem desenvolvidas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Obtenção de créditos referente as disciplinas do programa de mestrado.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exame de Proficiência na língua inglesa.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Levantamento bibliográfico sobre a área de pesquisa.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estudo sobre Web Semântica.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estudo sobre Ontologias.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desenvolvimento da ontologia do software.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desenvolvimento dos controles visuais.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Qualificação: redação da monografia de qualificação.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exame de Qualificação.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementação do primeiro protótipo.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testes preliminares, refinamento e reimplementação.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testes e validação: estudos de casos e refinamentos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Redação da Dissertação.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Redação e submissão de artigos com os resultados obtidos.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Defesa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Atividades Previstas 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Atividades-Previstas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A duração de cada uma das atividades está descrita no cronograma de atividades
+ e a Tabela ...
+ apresenta o cronograma de execução identificadas pela Tabela de atividades.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/cronograma.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cronograma de Atividades do Projeto 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cronograma-de-Atividades"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Atividades Concluídas até o Momento
+\end_layout
+
+\begin_layout Standard
+No cronograma, todas as atividades de A1 a A7 estão sendo concluídas.
+ As próximas etapas incluem elaboração do software para teste com usuários
+ e
+\end_layout
+
+\begin_layout Section
+Dificuldades e Limitações
+\end_layout
+
+\begin_layout Standard
+Em virtude de minha formação como tecnologo, tive muita dificuldade no inicio,
+ tendo que pesquisar constantemente com referência a varios assuntos ligados
+ a pesquisa.
+ Varias das linguagens abordadas não era de meu conhecimento e esse processo
+ de aprendizado foi mais despendioso do que o inicialmente planejado, além
+ é claro, da falta de tempo dispendido para isso, pois tenho emprego fixo
+ e isso acabou gerando uma dificuldade maior.
+ Tirando esses pequenos impedimentos iniciais, o processo esta sendo desenvolvid
+o de forma bem elaborada, dentro do cronograma elaborado.
+ 
+\end_layout
+
+\end_body
+\end_document

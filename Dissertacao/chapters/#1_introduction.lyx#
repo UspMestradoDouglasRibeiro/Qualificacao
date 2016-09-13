@@ -1,0 +1,402 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Sistemas de produção agrícola, como a cana\SpecialChar nobreakdash
+de\SpecialChar nobreakdash
+açúcar e soja, são extremamente
+ importantes para a economia do Brasil e de vários outros países.
+ Eles são sistemas complexos que integram muitos fenômenos de natureza diversa
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simon1991architecture"
+
+\end_inset
+
+.
+ É possível identificar dentro deles três subsistemas, (i) o subsistema
+ natural que fornece as condições físicas, químicas e biológicas que suportam
+ o desenvolvimento das culturas, (ii) o subsistema social onde são integradas
+ organizações e pessoas que influem na produção e comunicação, tanto externament
+e como internamente, dos sistemas produtivos, e (iii) o subsistema econômico
+ que estabelece as condiciones de oferta e demanda dos produtos e subprodutos
+ do sistema de produção agrícola.
+ Das interações entre esses subsistemas, emerge um comportamento complexo
+ que requer uma abordagem holística e estratégica para suportar a tomada
+ de decisões que garantam a sustentabilidade do sistema.
+\end_layout
+
+\begin_layout Standard
+Dada a complexidade dos sistemas de produção agrícola, surgiu a necessidade
+ de avaliação do estado, para a correta conferencia do funcionamento e assim
+ poder tomar as devidas decisões que garantiriam sua sustentabilidade, por
+ esta razão foi desenvolvido o software SustenAgro.
+ O software SustenAgro, foi criado para abordar a avaliação em termos de
+ indicadores, medindo assim as características críticas destes sistemas,
+ as quais indicam se existem problemas em cada um dos subsistemas mencionados,
+ que também são chamados dimensões da sustentabilidade, segundo a literatura
+ são divididas nas seguintes: dimensão ambiental, dimensão econômica e dimensão
+ social 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "AlkanOlsson:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Contextualização
+\end_layout
+
+\begin_layout Standard
+No processo de avaliação de sustentabilidade realizado pelo software SustenAgro,
+ há continua construção, pois o contexto produtivo da organização da informação
+ nas três sustentabilidade
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+, está ligado a um processo especifico para cada cultura, embora as característi
+cas do software auxiliem no metodo de avaliação, automatizando esse processo.
+ Esse processo foi realizado através do uso de ontologia, pois permite e
+ facilita a comunicação entre os especialistas do dominio e os desenvolvedores
+ da ferramenta.
+ Todos os elementos utilizados na ontologia do software, representam formalmente
+ os conceitos do dominio, aos quais foram integrados em funcionalidades
+ do sistemas permitidno uma personalização e vinculação da informação, satisfaze
+ndo assim, os requisitos do usuário.
+\end_layout
+
+\begin_layout Standard
+Com a finalidade de fornecer uma ferramenta visual, de modo a permitir que
+ o software SustenAgro possa utilizar ontologias de forma muito mais simples,
+ e assim, permitir que seja adaptavel as mudanças de dominio, propõe-se
+ no presente projeto o desenvolvimento de um sistema computacional baseado
+ na web semântica que tenha como base o conhecimento ja existente ao software
+ SustenAgro e que permita uma mudança em suas caracteristicas, pela simples
+ troca de ontologias, tudo de forma visual e sem a necessidade de um desenvolved
+or.
+\end_layout
+
+\begin_layout Standard
+Esta ferramenta poderá ser utilizada de forma integrada ao SustenAgro, bem
+ como, em outros softwares futuros e que permitam a utilização de ontologias
+ em sua estrutura, tudo de forma integrada.
+ Uma possibilidade a mais seria a utilização desta mesma ferramenta, para
+ a representação visual da ontologia dos controles gráficos, dando assim,
+ maior suporte e uma maior autonomia do próprio software SustenAgro.
+\end_layout
+
+\begin_layout Standard
+Nesta pesquisa serão desenvolvidas as seguintes tecnologias: editor de ontologia
+ gráfico via web, visualizador de ontologias ja existentes de forma gráfica
+ via web, validador de ontologia permitindo assim, uma checagem das ontologias
+ utilizadas de forma visual..
+\end_layout
+
+\begin_layout Section
+Motivação
+\end_layout
+
+\begin_layout Standard
+Dado a complexidade da criação e uso de ontologias de forma manual, e da
+ capacidade do mesmo software SustenAgro ser utilizado para outras culturas,
+ bastando para isso uma mudança de ontologias, houve a convicção de que
+ uma ferramenta deste genero seria necessário, permitindo assim, uma maior
+ flexibilização do software e automatizando varias outras culturas.
+ Esse processo de automação, teria o mesmo critério de avaliação da sustentabili
+dade da cultura de cana-de-açúcar que está em continua construção e depende
+ do contexto produtivo da organização da informação nas três dimensões de
+ sustentabilidade, ou poderiam mudar, simplesmente definindo de forma visual
+ via web esses novos critérios, baseados em ontologias especificas ou criadas
+ para esse fim.
+\end_layout
+
+\begin_layout Standard
+Um das caracteristicas positivas do software seria a usabilidade e facilidade
+ da ferramenta, pois como seria integrada ao software existente - SustenAgro
+ - a curva de aprendizado seria muito menor, bastando o conhecimento sobre
+ sustentabilidade na cultura desejada e um conhecimento prévio em ontologia
+ para a elaboração ou uso das representações de entidades, classes, relações
+ semânticas e axiomas.
+ Ditos elementos vão constituir a ontologia que será uma representação formal
+ dos conceitos do domínio, os quais serão integrados em cada uma das funcionalid
+ades do sistema permitindo uma personalização e vinculação da informação
+ para satisfazer os requisitos do usuário.
+\end_layout
+
+\begin_layout Standard
+Finalmente a integração propiciará uma forma mais simples e eficaz de mudança
+ de cultura, tendo o tempo necessário para avaliação automatizada desta
+ cultura, um fator importante para sua elaboração.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Desenvolver um sistema web que permita editar, visualizar e criar ontologias
+ para uso integrado ao sistema SustenAgro, possibilitando assim, uma forma
+ eficiente e eficaz de realizar a avaliação de novas culturas para a sustentabil
+idade nos sistemas produtivos, fazendo uso das tecnologias da web semântica
+ para representar o conhecimento dos especialistas.
+\end_layout
+
+\begin_layout Subsection*
+Objetivos específicos
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um editor de ontologia de forma integrada para o sistema SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um visualizador de ontologias já criadas, e permitir sua importação
+ a outras em desenvolvimento.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um validador das ontologias, afim, de testar sua exatidão.
+\end_layout
+
+\begin_layout Itemize
+Demonstrar que a integração desta ferramenta visual via web de edição de
+ ontologias, pode auxiliar o software SustenAgro, na avaliação de outras
+ culturas de forma simples e eficiente.
+\end_layout
+
+\begin_layout Section
+Estrutura Proposta
+\end_layout
+
+\begin_layout Standard
+Esta monografia de qualificação está organizada da seguinte forma: primeiramente
+ é apresentado o capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Introduction"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ que dá uma visão global do projeto e os objetivos que serão desenvolvidos.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:decision_support_systems"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ são apresentados os conceitos relacionados a esse tipo sistema.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Semantic_Web"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentada a fundamentação teórica da web semântica que suportará o
+ desenvolvimento do editor visual de ontologias.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Related_Work"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ são apresentadas as pesquisas relacionadas ao editor, quais são as principais
+ ferramentas que existem hoje, suas diferenças e semelhanças com esta ferramenta.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Proposal"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentada uma descrição detalhada da proposta do trabalho, apresentados
+ a metodologia, os resultados esperados e o cronograma para condução das
+ etapas desta pesquisa.
+ Finalmente no capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Results"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentado um conclusão sobre o trabalho.
+ Em termos de anexos, são apresentados uma descrição do projeto SustenAgro
+ no apêndice 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Projeto-SustenAgro"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ e os principais conceitos estudados na literatura científica que estão
+ relacionados à área de avaliação da sustentabilidade no apêndice intitulado
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Sustainability_Assessment"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Contribuição
+\end_layout
+
+\begin_layout Standard
+Como contribuição esta monografia de qualificação tem o intuito de demonstrar
+ a possibilidade de integração de um software de edição de ontologias com
+ um software de 
+\end_layout
+
+\end_body
+\end_document
