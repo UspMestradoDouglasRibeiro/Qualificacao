@@ -195,7 +195,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SAD.jpeg
-	lyxscale 90
+	lyxscale 70
 	width 100col%
 	clip
 
@@ -450,6 +450,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/HistoriaWebSemantica.jpg
+	lyxscale 70
 	width 100col%
 
 \end_inset
@@ -510,7 +511,7 @@ O conceito de Linked Data pode ser definido como um conjunto de boas práticas
  Sua fundamentação prática está ligada a tecnologias web, como HTTP (Hypertext
  Transfer Protocol) e URI (Uniform Resource Identifier), com o objetivo
  de permitir a leitura dos dados conectados, de forma automática, por softwares
- especificos.
+ específicos.
  A utilização de padrões de Linked Data, permitem que sejam publicados dados
  de forma que possam ser lidos por pessoas e processados por máquinas.
  Esta área surgiu em 2006, com a publicação do documento Disgn Issues (Berners-L
@@ -542,6 +543,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/5_estrelas.png
+	lyxscale 70
 	width 100col%
 
 \end_inset
@@ -626,7 +628,7 @@ Sujeito:
 \series bold
 Predicado:
 \series default
- são aspectos, características, atributos ou relações especificas que describem
+ são aspectos, características, atributos ou relações especificas que descrevem
  o sujeito, cada predicado têm um significado especifico e relaciona um
  sujeito com um objeto.
 \end_layout
@@ -803,6 +805,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SmartDataContinuum.png
+	lyxscale 70
 	width 100col%
 
 \end_inset
@@ -814,9 +817,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
-Niveis de Representação de Dados na forma de conhecimento processável por
+Níveis de Representação de Dados na forma de conhecimento processável por
  máquinas 
 \begin_inset CommandInset label
 LatexCommand label
@@ -1115,13 +1116,13 @@ Embrapa
 \end_layout
 
 \begin_layout Standard
-A Embrapa é uma Empresa Brasileira de Pesquisas Agropecuárias, que foi criada
- em abril de 1973, com vinculo ao Ministério da Agricultura, Pecuária e
- Abastecimento.
- Com pesquisas na área de Agropecuária e parceiros como o Sistema Nacional
+A Empresa Brasileira de Pesquisas Agropecuárias (Embrapa) foi criada em
+ abril de 1973 e é vinculada ao Ministério da Agricultura, Pecuária e Abastecime
+nto.
+ Com pesquisas na área de Agropecuária e parceiros, como o Sistema Nacional
  de Pesquisa Agropecuária (SNPA), desenvolveu um modelo de agricultura e
- pecuária tropical especificamente para o brasil, superando as barreiras
- que limitavam a produção de alimentos, fibras e energia em nosso País.
+ pecuária tropical especificamente para o Brasil, superando barreiras que
+ limitavam a produção de alimentos, fibras e energia em nosso País.
  Com a construção do conhecimento em conjunto com os diversos segmentos
  do setor, promove a sustentabilidade da agricultura brasileira, com respeito
  à diversidade ambiental, étnica e cultural.
@@ -1129,7 +1130,7 @@ A Embrapa é uma Empresa Brasileira de Pesquisas Agropecuárias, que foi criada
  e soluções.
  Neste sentido foi desenvolvido em conjunto com a USP de São Carlos, o software
  SustenAgro, que visa trazer de forma automatizada as informações sobre
- sustentabilidade da cultura de cana-de-açucar.
+ sustentabilidade da cultura de cana-de-açúcar.
 \end_layout
 
 \end_body
