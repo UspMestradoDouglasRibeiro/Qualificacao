@@ -129,7 +129,7 @@ Contextualização
 \begin_layout Standard
 No processo de avaliação de sustentabilidade, realizado pelo software SustenAgro
 , há uma continua construção, pois o contexto produtivo da organização da
- informação nas três sustentabilidade 
+ informação nas três sustentabilidades 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -138,40 +138,57 @@ key "oliveira:2013"
 
 , está ligado a um processo especifico para cada cultura, embora as característi
 cas do software auxiliem no método de avaliação, automatizando esse processo.
- Esse processo foi realizado através do uso de ontologia, pois permite e
- facilita a comunicação entre os especialistas do domínio e os desenvolvedores
- da ferramenta.
- Todos os elementos utilizados na ontologia do software, representam formalmente
- os conceitos do domínio, os quais foram integrados em funcionalidades do
- sistemas permitindo uma personalização e vinculação da informação, satisfazendo
- assim, os requisitos do usuário.
+ Esse processo foi realizado através do uso de uma ontologia, chamada ontologia
+ SustenAgro.
+ Ela facilita a comunicação entre os especialistas do domínio e os desenvolvedor
+es da ferramenta.
+ Todos os elementos utilizados nessa ontologia representam formalmente conceitos
+ do domínio (sustentabilidade em sistemas de produção de cana), os quais
+ foram integrados em funcionalidades do sistemas permitindo uma personalização
+ e vinculação da informação, satisfazendo assim, os requisitos dos usuários.
+ 
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de fornecer uma ferramenta visual, de modo a permitir que
- o software SustenAgro possa utilizar ontologias de forma muito mais simples,
- e assim, permitir que seja adaptável as mudanças de domínio, propõe-se,
- no presente projeto, o desenvolvimento de um sistema computacional baseado
- na web semântica que tenha como base o conhecimento ja existente ao software
- SustenAgro e que permita uma mudança em suas características, pela simples
- troca de ontologias, tudo de forma visual e sem a necessidade de um desenvolved
-or.
+O nosso grupo e nossos parceiros na Empresa Brasileira de Pesquisa Agropecuária
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Embrapa"
+description "Empresa Brasileira de Pesquisa Agropecuária"
+
+\end_inset
+
+(Embrapa) gostaríamos de aplicar, o que foi desenvolvido para a ferramenta
+ SustenAgro, em outros domínios de conhecimento da área de sustentabilidade
+ (além da produção de cana).
+ Por isso, neste momento o sistema SustenAgro está sendo dividida em dois.
+ Todas as partes do sistemas que podem ser generalizadas para outros domínios
+ de aplicação estão sendo retiradas do SustenAgro e colocadas num novo sistema
+ chamado Decisioner.
+ Todo o código restante no SustenAgro será transformado numa DSL.
+ O SustenAgro passará a ser uma aplicação rodando no Decisioner.
+ Ele será formado pela ontologia SustenAgro (que descreve o domínio de conhecime
+nto), um programa na DSL do Decisioner (que estabelece as ações que o programa
+ faz), e um conjunto de textos e imagens, que dão a identidade visual do
+ sistema SustenAgro na web.
 \end_layout
 
 \begin_layout Standard
-Esta ferramenta poderá ser utilizada de forma integrada ao SustenAgro, bem
- como, em outros softwares futuros que permitam a utilização de ontologias
- em sua estrutura.
- Uma possibilidade a mais seria a utilização dessa mesma ferramenta, para
- a representação visual da ontologia dos controles gráficos, dando assim,
- maior suporte e uma maior autonomia do próprio software SustenAgro.
-\end_layout
+A ideia é que especialistas de domínio da Embrapa usem o Decisioner para
+ criar aplicações como o SustenAgro sem a ajuda de programadores, depois
+ de um treinamento básico.
+ Um dos problemas para alcançar esse objetivo, é criar um sistema que permita
+ a esses especialistas escrever ou editar ontologias sem a necessidade de
+ aprender linguagens da web semântica, como a Web Ontology Language 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OWL"
+description "Web Ontology Language"
 
-\begin_layout Standard
-Nesta pesquisa serão desenvolvidas as seguintes tecnologias: editor de ontologia
- gráfico via web, visualizador de ontologias ja existentes de forma gráfica
- via web, validador de ontologia permitindo assim, uma checagem das ontologias
- utilizadas de forma visual..
+\end_inset
+
+(OWL) [Ref], ou ferramentas mais técnicas, como o Protégé [Ref].
 \end_layout
 
 \begin_layout Section
@@ -179,36 +196,24 @@ Motivação
 \end_layout
 
 \begin_layout Standard
-Dado a complexidade da criação e uso de ontologias de forma manual, e da
- capacidade do mesmo software SustenAgro ser utilizado para outras culturas,
- bastando para isso uma mudança de ontologias, houve a convicção de que
- uma ferramenta deste gênero seria necessário, permitindo assim, uma maior
- flexibilização do software e automatizando varias outras culturas.
- Esse processo de automação, teria o mesmo critério de avaliação da sustentabili
-dade da cultura de cana-de-açúcar que está em continua construção e depende
- do contexto produtivo da organização da informação nas três dimensões de
- sustentabilidade, ou poderiam mudar, simplesmente definindo de forma visual
- via web esses novos critérios, baseados em ontologias especificas ou criadas
- para esse fim.
+Dado a complexidade da criação e uso de ontologias de forma manual, especialment
+e por usuários leigos em computação, uma das características positivas de
+ um editor visual de ontologias seria a sua usabilidade e facilidade de
+ aprendizado.
+ Desenvolver uma boa ontologia com essa ferramenta, continuaria a ser uma
+ tarefa difícil, mas ela focaria esse dificuldade em tarefas como classificar
+ os conceitos do domínio, hierarquiza-los, etc.
+ Essas são justamente as tarefas em que especialistas de domínio são competentes.
 \end_layout
 
 \begin_layout Standard
-Um das características positivas do software seria a usabilidade e facilidade
- da ferramenta, pois como seria integrada ao software existente – SustenAgro
- – a curva de aprendizado seria muito menor, bastando o conhecimento sobre
- sustentabilidade na cultura desejada e um conhecimento prévio em ontologia
- para a elaboração ou uso das representações de entidades, classes, relações
- semânticas e axiomas.
- Ditos elementos vão constituir a ontologia que será uma representação formal
- dos conceitos do domínio, os quais serão integrados em cada uma das funcionalid
-ades do sistema permitindo uma personalização e vinculação da informação
- para satisfazer os requisitos do usuário.
-\end_layout
-
-\begin_layout Standard
-Finalmente a integração propiciará uma forma mais simples e eficaz de mudança
- de cultura, tendo o tempo necessário para avaliação automatizada desta
- cultura, um fator importante para sua elaboração.
+Sendo uma ferramenta visual, um editor desse tipo tem uma curva de aprendizado
+ menor, bastando um conhecimento prévio sobre ontologias para a representação
+ de entidades, classes, relações semânticas, etc.
+ Esses elementos serão manipulados através de operações gestuais (ou com
+ o mouse) na tela do computador e vão constituir a representação formal
+ dos conceitos do domínio.
+ Essa representação pode ser usada em outros sistemas, como o Decisioner.
 \end_layout
 
 \begin_layout Section
@@ -216,19 +221,47 @@ Objetivos
 \end_layout
 
 \begin_layout Standard
-Este projeto de mestrado tem como objetivo propor e avaliar um editor de
- Ontologia Visual como ferramenta de apoio para construção de sistemas inteligen
-tes, permitindo assim, que a partir de elementos visuais seje criado e/ou
- utilizada a Ontologia.
- O desenvolvimento de um sistema web que permita editar, visualizar e criar
- ontologias para uso integrado ao sistema SustenAgro, possibilita uma forma
- eficiente e eficaz de realizar a avaliação de novas culturas para a sustentabil
-idade nos sistemas produtivos, fazendo uso das tecnologias da web semântica
- para representar o conhecimento dos especialistas.
- A visualização gráfica, através de grafos e árvores, e a possibilidade
- do uso de comandos, numa linguagem próxima à usada por domain experts,
- vai permitir a criação/edição de ontologias por usuários fora da área da
- computação, com o mínimo de treinamento.
+Este projeto de mestrado tem como objetivo propor e avaliar um editor visual
+ de ontologias, como ferramenta de apoio para construção de sistemas de
+ apoio a decisão (Decision Support Systems 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSS"
+description "Decision Support System"
+
+\end_inset
+
+- DSSs), e mostrar que esse editor pode ser usado por especialistas de domínio
+ para a criação de ontologias, para o domínio de sustentabilidade, sem a
+ ajuda de programadores.
+\end_layout
+
+\begin_layout Standard
+Esse editor permitirá a criação e edição de entidades de uma ontologia usando
+ elementos visuais.
+ Ele será desenvolvido como uma aplicação interativa web para editar, visualizar
+ e criar ontologias e utilizará tecnologias da web semântica, como a linguagem
+ OWL, na sua implementação.
+ Ele será usado no software Decisioner, para permitir sua adaptação a novos
+ domínios de conhecimento, mas poderá também ser usado de forma independente
+ em outros softwares, que permitam a utilização de ontologias em sua estrutura.
+ 
+\end_layout
+
+\begin_layout Standard
+A visualização gráfica, através de grafos e árvores, e a possibilidade do
+ uso de comandos, numa linguagem próxima à usada pelos especialistas de
+ domínio, vai permitir a criação/edição de ontologias por usuários fora
+ da área da computação, com o mínimo de treinamento.
+ É importante destacar que, como esse editor de ontologias será usado para
+ se criar/editar ontologias para domínios bastante específicos (por exemplo,
+ sistemas de produção de cana-de-açúcar na região centro-sul do Brasil),
+ ele não necessitará modelar toda a expressividade necessárias para ontologias
+ mais gerais (como a Gene Ontology).
+ Assim, apesar dele trabalhar com ontologias escritas em OWL, essas ontologias
+ não usarão toda a expressividade dessa linguagem.
+ Isso facilitará a implementação do sistema e seu uso pelos especialistas,
+ que não terão de dominar as sutilezas da linguagem OWL.
 \end_layout
 
 \begin_layout Subsection*
@@ -236,26 +269,61 @@ Objetivos específicos
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um editor de ontologia de forma integrada para o sistema SustenAgro.
+Desenvolver um editor visual de ontologias de forma integrada para o sistema
+ Decisioner.
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um visualizador de ontologias já criadas, e permitir sua importação
- a outras em desenvolvimento.
+Desenvolver a visualização de ontologias já criadas e permitir sua importação
+ por outras em desenvolvimento.
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um validador das ontologias, afim, de testar sua exatidão.
+Desenvolver um validador das ontologias, para de testar sua consistência
+ lógica.
 \end_layout
 
 \begin_layout Itemize
-Demonstrar que a integração desta ferramenta visual via web de edição de
- ontologias, pode auxiliar o software SustenAgro, na avaliação de outras
- culturas de forma simples e eficiente.
+Demonstrar que especialistas de domínio podem usar o editor para criar novas
+ ontologias no software Decisioner, sem a ajuda de programadores.
+\end_layout
+
+\begin_layout Standard
+No desenvolvimento desse editor, será usado todo o conhecimento já adquirido
+ na criação do software SustenAgro pela nossa equipe (no ICMC e Embrapa).
+\end_layout
+
+\begin_layout Section
+Contribuição
+\end_layout
+
+\begin_layout Standard
+Como contribuição principal deste projeto de mestrado, pretendemos mostrar
+ que é possível que especialistas de domínio, da área agrícola, possam desenvolv
+er ontologias para para domínios específicos sem a ajuda de programadores.
+ Também se pretende mostrar que é possível integrar um software visual de
+ edição de ontologias com um software de apoio a sistemas inteligentes,
+ no caso o Decisioner, para a criação de DSSs na área agrícola (especialmente,
+ em sustentabilidade).
+ Inicialmente foi desenvolvido um DSSs para os sistemas de produção de cana-de-a
+çúcar (SustenAgro), mas, através da integração das ferramentas (editor mais
+ Decisioner), pode-de criar outros DSSs para outras culturas ou tecnologias
+ agrícolas.
+ 
 \end_layout
 
 \begin_layout Section
 Estrutura Proposta
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Esse tópico deve ser checado no fim da escrita da quali.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -394,22 +462,6 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Section
-Contribuição
-\end_layout
-
-\begin_layout Standard
-Como contribuição esta monografia de qualificação, tem o intuito de demonstrar
- a possibilidade de integração de um software de edição de ontologias com
- um software de apoio a sistemas inteligentes, no caso sendo utilizado o
- SustenAgro para a automação de dados para sustentabilidade que inicialmente
- foi desenvolvido para os dados de cana-de-açúcar, mas que através da integração
- de ambas as ferramentas, podem ser utilizados para diversas outras culturas,
- mudando-se as ontologias a que se refere e também os dados a serem armazenados,
- ficando a cargo do SustenAgro a resposta para os dados fornecidos e ao
- editor de ontologias, o como trabalhar com esses dados.
 \end_layout
 
 \end_body
