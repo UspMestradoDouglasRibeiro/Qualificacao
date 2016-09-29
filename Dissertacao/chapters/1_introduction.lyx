@@ -299,8 +299,9 @@ Contribuição
 
 \begin_layout Standard
 Como contribuição principal deste projeto de mestrado, pretendemos mostrar
- que é possível que especialistas de domínio, da área agrícola, possam desenvolv
-er ontologias para para domínios específicos sem a ajuda de programadores.
+ que é possível que especialistas de domínio, neste caso da área agrícola,
+ possam desenvolver ontologias para para domínios específicos sem a ajuda
+ de programadores.
  Também se pretende mostrar que é possível integrar um software visual de
  edição de ontologias com um software de apoio a sistemas inteligentes,
  no caso o Decisioner, para a criação de DSSs na área agrícola (especialmente,
@@ -462,6 +463,40 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Esse texto estava no início do próximo capítulo, mas não tem muito haver:
+\end_layout
+
+\begin_layout Plain Layout
+A Visualização/Edição de Ontologia não é um tema novo e um certo número
+ de abordagens se tornaram disponíveis nos últimos anos.
+ Algumas já estão bem estabelecidas, particularmente no campo da modelagem
+ de ontologias.
+ Em outras áreas da engenharia de ontologias, como alinhamento de ontologias
+ e depuração, embora várias ferramentas tenham sido recentemente desenvolvidas,
+ poucas fornecem uma interface gráfica do usuário, para não mencionar ajudas
+ à navegação ou técnicas de visualização e interação abrangentes.
+\end_layout
+
+\begin_layout Plain Layout
+Não há uma solução única, mas diferentes casos de uso que exigem diferentes
+ técnicas de visualização e interação.
+ Em última análise, proporcionando melhores interfaces de usuário, representaçõe
+s visuais e técnicas de interação irá promover o envolvimento dos usuários
+ e, provavelmente, conduzem a resultados de maior qualidade em diferentes
+ aplicações que empregam ontologias e assim, proliferar o consumo de dados
+ vinculados.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

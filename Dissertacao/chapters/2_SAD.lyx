@@ -77,24 +77,17 @@
 \begin_body
 
 \begin_layout Standard
-A Visualização/Edição de Ontologia não é um tema novo e um certo número
- de abordagens se tornaram disponíveis nos últimos anos.
- Algumas já estão bem estabelecidas, particularmente no campo da modelagem
- de ontologias.
- Em outras áreas da engenharia de ontologias, como alinhamento de ontologias
- e depuração, embora várias ferramentas tenham sido recentemente desenvolvidas,
- poucas fornecem uma interface gráfica do usuário, para não mencionar ajudas
- à navegação ou técnicas de visualização e interação abrangentes.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Você deve escrever um parágrafo de introdução.
+ Introduzindo os tópicos que você vai falar.
 \end_layout
 
-\begin_layout Standard
-Não há uma solução única, mas diferentes casos de uso que exigem diferentes
- técnicas de visualização e interação.
- Em última análise, proporcionando melhores interfaces de usuário, representaçõe
-s visuais e técnicas de interação irá promover o envolvimento dos usuários
- e, provavelmente, conduzem a resultados de maior qualidade em diferentes
- aplicações que empregam ontologias e assim, proliferar o consumo de dados
- vinculados.
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -102,10 +95,20 @@ Sistemas de Apoio a Decisão
 \end_layout
 
 \begin_layout Standard
-A construção de sistemas que sejam capazes de fornecer um suporte ao gestor
- em um processo de tomada de decisões vem sendo um desafio ao longo dos
+A construção de sistemas que sejam capazes de fornecer um suporte ao gestor,
+ em um processo de tomada de decisões, vem sendo um desafio ao longo dos
  anos.
- Sistemas de Apoio a Decisão (SAD) 
+ Sistemas de Apoio a Decisão (SAD)
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Usei o termo em inglês, veja qual você prefere e use no texto todo.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SAD"
@@ -154,7 +157,7 @@ key "junior2006sistemas"
 \end_layout
 
 \begin_layout Itemize
-Manuseio de extensos volumes de dados: estes sistemas permitem a utilização
+Manuseio de extensos volumes de dados: esses sistemas permitem a utilização
  de grandes volumes de dados para analisar resultados;
 \end_layout
 
@@ -249,7 +252,7 @@ reference "fig:Componentes-SAD"
  O banco de modelos armazena os vários modelos que auxiliam a criação de
  cenários para a tomada de decisões.
  Comparado com outras técnicas de criação de cenários (como sistemas especialist
-as), o uso de bancos de modelos são vantajosos, pois são menos dispendiosos
+as), o uso de bancos de modelos é vantajoso, pois são menos dispendiosos
  e mais rápidos de implementar.
  É importante também que os bancos de dados sejam mantidos atualizados para
  um resultado confiável.
@@ -260,8 +263,8 @@ Arquitetura para Sistemas de Apoio a Decisão
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um software define a organização em termos de seus componentes,
- suas interconexões, suas interações e também suas principais propriedades
+A arquitetura de um software define sua organização em termos de seus componente
+s, suas interconexões, suas interações e também suas principais propriedades
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -305,7 +308,7 @@ reference "fig:Componentes-SAD"
 ) serem muito parecidos, é possível criar uma arquitetura que possa ser
  re\SpecialChar nobreakdash
 usada em diferentes SADs (ou classes de SADs).
- Esta arquitetura pode ser baseada em componentes de software re\SpecialChar nobreakdash
+ Essa arquitetura pode ser baseada em componentes de software re\SpecialChar nobreakdash
 usáveis.
  Programadores podem usar essa arquitetura e re\SpecialChar nobreakdash
 usar os componentes de software,
@@ -342,7 +345,7 @@ key "Pahl2007"
 
 .
  Ontologias e padrões da Web Semântica serão abordados com mais profundidade
- no próximo capítulo.
+ nas próximas seções.
 \end_layout
 
 \begin_layout Standard
@@ -359,8 +362,15 @@ Ontologias, que descrevam componentes de software para serem usados num
 \begin_layout Standard
 Como especialistas de domínio não têm um conhecimento muito detalhado sobre
  linguagens de especificação de sistemas, é necessário o desenvolvimento
- de uma Domain Specific Language (DSL) adequada ao nível de conhecimento
- de computação dos especialistas.
+ de uma Domain Specific Language 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSL"
+description "Domain Specific Language"
+
+\end_inset
+
+(DSL) adequada ao nível de conhecimento de computação dos especialistas.
  Essa linguagem também deve conter termos familiares ao domínio desses especiali
 stas.
  
@@ -372,24 +382,25 @@ Web Semântica
 
 \begin_layout Standard
 A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
- informações de maneira rápida e simples, seu crescimento exponencial e
- caótico fez com que a mesma se tornasse hoje um gigantesco repositório
- de documentos, o que dificulta a recuperação de informações.
+ informações de maneira rápida e simples.
+ Seu crescimento exponencial e caótico fez com que a mesma se tornasse hoje
+ um gigantesco repositório de documentos, o que dificulta a recuperação
+ de informações.
  Até o momento, não existe nenhuma estratégia abrangente e satisfatória
  para a indexação de documentos por meio de “motores de busca” que seja
- coerente com uma estrutura linguística.
- 
+ coerente com uma estrutura linguística 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Souza:2004"
 
 \end_inset
 
+.
  Com o intuito de preencher esse gargalo semântico na busca por informações,
  surge a web semântica.
  Ela tem como objetivo incorporar significado às informações presentes na
  web, criando um ambiente onde agentes de software e usuários possam trabalhar
- de forma cooperativa e entender o significado (sentido) presente nos dados.
+ de forma cooperativa e entender o significado (sentido) presente nos dados
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -397,25 +408,33 @@ key "brandao2002introduccao"
 
 \end_inset
 
-Um exemplo da deficiência da web atual pode ser identificada na busca realizada
+.
+ Um exemplo da deficiência da web atual pode ser identificada na busca realizada
  pelos sistemas de recuperação de informação, que usam palavras-chave nas
- buscas,onde apenas a similaridade e o número de ocorrências de certas palavras
- no conteúdo de documentos são levados em consideração e não a semântica
- presente naquela informação.
- 
+ buscas, onde apenas a similaridade e o número de ocorrências de certas
+ palavras no conteúdo de documentos são levados em consideração e não a
+ semântica presente naquela informação 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Souza:2004"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-Segundo a definição feita do W3C
+Segundo a definição feita pelo World Wide Web Consortium 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "W3C"
+description "World Wide Web Consortium"
+
+\end_inset
+
+(W3C)
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 http://www.w3.org/2001/sw
@@ -423,8 +442,8 @@ http://www.w3.org/2001/sw
 
 \end_inset
 
-, a web semântica é um framework que permite compartir e reutilizar dados
- através das fronteiras das aplicações, empresas e comunidades.
+, a web semântica permite compartir e reutilizar dados além das fronteiras
+ das aplicações, empresas e comunidades.
  Ela tem duas funcionalidades principais: 
 \end_layout
 
@@ -462,7 +481,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-História da Web Semântica
+História da Web Semântica.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:HistoriaWebSemantica"
@@ -483,21 +502,28 @@ name "fig:HistoriaWebSemantica"
 \end_layout
 
 \begin_layout Standard
-A web semântica é formada por um conjunto de padrões propostos pelo World
- Wide Web Consortium (W3C).
+A web semântica é formada por um conjunto de padrões propostos pelo W3C.
  Eles evoluíram de padrões focados na representação de dados para a de conhecime
 nto.
- Na 
+ Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:HistoriaWebSemantica"
 
 \end_inset
 
- podem ser observados os padrões que constituem a Web Semântica e sua relação
+, podem ser observados os padrões que constituem a Web Semântica e sua relação
  com os padrões XML.
  Eles promovem formatos de dados comuns na WWW e também a inclusão de conteúdo
- Semântico na web, usando o padrão Resource Description Framework (RDF).
+ semântico na web, usando o padrão Resource Description Framework 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RDF"
+description "Resource Description Framework"
+
+\end_inset
+
+(RDF).
 \end_layout
 
 \begin_layout Section
@@ -505,19 +531,53 @@ Linked Data/Linked Open Data
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Cadê a conexão com a seção anterior?
+\end_layout
+
+\end_inset
+
 O conceito de Linked Data pode ser definido como um conjunto de boas práticas
  para publicar e conectar conjuntos de dados estruturados na Web, com o
- intuito de criar uma "Web de Dados" (Bizer et al., 2006).
- Sua fundamentação prática está ligada a tecnologias web, como HTTP (Hypertext
- Transfer Protocol) e URI (Uniform Resource Identifier), com o objetivo
- de permitir a leitura dos dados conectados, de forma automática, por softwares
- específicos.
- A utilização de padrões de Linked Data, permitem que sejam publicados dados
+ intuito de criar uma "Web de Dados" 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+–> Coloque a referência!
+\end_layout
+
+\end_inset
+
+(Bizer et al., 2006).
+ Sua fundamentação prática está ligada à tecnologias web, como Hypertext
+ Transfer Protocol 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HTTP"
+description "Hypertext Transfer Protocol"
+
+\end_inset
+
+(HTTP) e Uniform Resource Identifier 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "URI"
+description "Uniform Resource Identifier"
+
+\end_inset
+
+(URI), com o objetivo de permitir a leitura dos dados conectados, de forma
+ automática, por softwares específicos.
+ A utilização de padrões Linked Data permite que sejam publicados dados
  de forma que possam ser lidos por pessoas e processados por máquinas.
- Esta área surgiu em 2006, com a publicação do documento Disgn Issues (Berners-L
-ee, 2006), na qual tem uma subseção de Web Semântica exclusiva para Linked
+ Esta área surgiu em 2006, com a publicação do documento Disign Issues (Berners-
+Lee, 2006), na qual tem uma subseção de Web Semântica exclusiva para Linked
  Data.
- É importante deixar claro, que Linked Data, não necessariamente precisam
+ É importante deixar claro, que Linked Data não necessariamente precisam
  ser abertos, por isso, visando deixar de forma bastante clara, foi proposto
  o "Sistema de 5 Estrelas", que é um sistema que classifica por meio de
  estrelas o grau de abertura dos dados, conforme mostrado na Figura 
@@ -529,7 +589,7 @@ reference "fig:5_estrelas"
 
 .
  Quanto mais aberto, maior é o numero de estrelas para os dados e mais facilment
-e pode ser enriquecido (conectado).
+e eles podem ser enriquecidos (conectados).
 \end_layout
 
 \begin_layout Standard
@@ -555,6 +615,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se você não vai explicar como esse sistema de estrelas funciona, tire a
+ figura.
+ Pode ser explicado na legenda da própria figura.
+\end_layout
+
+\end_inset
+
 Esquema de implementação das 5 estrelas propostos por Tim Berners-Lee
 \begin_inset CommandInset label
 LatexCommand label
@@ -577,9 +648,16 @@ name "fig:5_estrelas"
 
 \begin_layout Standard
 Na presença de uma enorme rede de recursos interligados na web, chamada
- de Linked Open Data (LOD), um dos desafios enfrentados pela comunidade
- é a visualização de conjuntos de dados multidimensionais para proporcionar
- uma visão geral eficiente.
+ de Linked Open Data 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LOD"
+description "Linked Open Data"
+
+\end_inset
+
+(LOD), um dos desafios enfrentados pela comunidade é a visualização de conjuntos
+ de dados multidimensionais para proporcionar uma visão geral eficiente.
  Com o foco passando de uma Web de documentos para uma Web de dados, mudanças
  nos paradigmas de interação estão em demanda também.
  Essas novas abordagens também precisam levar em consideração os desafios
@@ -592,9 +670,25 @@ Resource Description Framework (RDF)
 \end_layout
 
 \begin_layout Standard
-O Resource Description Framework (RDF) é uma família de especificações da
- W3C, que foi disponibilizada em 1999 como parte do W3C Semantic Web Effort
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+LIGAÇÃO com o último parágrafo!
+\end_layout
+
+\end_inset
+
+O Resource Description Framework 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RDF"
+description "Resource Description Framework"
+
+\end_inset
+
+(RDF) é uma família de especificações da W3C que foi disponibilizada em
+ 1999 como parte do W3C Semantic Web Effort 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Gruber1995"
@@ -608,38 +702,38 @@ key "Gruber1995"
  O RDF é usado em várias áreas de aplicação, como resource discovery para
  melhorar as capacidades dos motores de busca, cataloging para descrever
  o conteúdo e as relações de conteúdo disponibilizados em um sistema web
- particular, e descrição de intellectual property rights de páginas web.
+ particular, e descrição de direitos de propriedade intelectual de páginas
+ web.
  O modelo básico de dados consiste em um padrão de três tipos de objetos:
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Sujeito:
 \series default
- representa os recursos e são identificados por meio de URIs, sem importar
- o tamanho deles, por exemplo, uma pagina web ou um elemento HTML podem
- ser recursos.
+ representa os recursos e são identificados por meio de URIs, por exemplo,
+ uma página web ou um elemento HTML podem ser recursos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Predicado:
 \series default
  são aspectos, características, atributos ou relações especificas que descrevem
- o sujeito, cada predicado têm um significado especifico e relaciona um
+ o sujeito, cada predicado têm um significado específico e relaciona um
  sujeito com um objeto.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Objeto:
 \series default
- um recurso especifico ou valor da propriedade que representa uma característica
-s do objeto
+ um recurso específico ou valor de propriedade que representa uma característica
+ do objeto
 \begin_inset Foot
 status open
 
@@ -660,57 +754,101 @@ Com RDF é possível explicitar relações entre dois objetos (usando-se uma
 \end_layout
 
 \begin_layout Subsection
-Resource Description Framework Schema (RDFs)
+Resource Description Framework Schema (RDFS)
 \end_layout
 
 \begin_layout Standard
-A RDF Schema 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Brickley2000"
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Conexão com o anterior!
+\end_layout
 
 \end_inset
 
- é responsável por prover mecanismos para declaração dessas propriedades.
- Um esquema não define somente as propriedades dos recursos, mas também
- os tipos de recursos que estão sendo descritos.
- Pode ser entendido como uma espécie de dicionário onde são definidos os
- termos que serão utilizados em declarações RDF.
- A especificação da RDF Schema do W3C fornece os mecanismos necessários
- à definição de elementos, de classes de recursos, de possíveis restrições
- de classes e relacionamentos e detecção de violação de restrições.
+O Resource Description Framework Schema 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RDFS"
+description "Resource Description Framework Schema"
+
+\end_inset
+
+(RDF) [REF] é um conjunto de classes com certas propriedades que provêem
+ elementos básicos para a descrição de ontologias, ou vocabulários RDF,
+ usados na estruturação de informações em RDF.
+ Ele pode ser entendido como uma espécie de dicionário, onde são definidos
+ os termos que serão utilizados em declarações RDF.
+ A especificação do RDFS do W3C fornece os mecanismos necessários à definição
+ de elementos, de classes de recursos, de possíveis restrições à classes
+ e relacionamentos, e detecção de violação de restrições [Ref da spec do
+ W3C].
  
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Escopo.
-
-\series default
- A especificação da RDF Schema foi diretamente pensada levando em consideração
- problemas específicos e imediatos.
- Seus criadores esperam que outros problemas futuros compartilhem característica
-s parecidas e que assim seja possível usar as classes básicas já projetadas.
- Os problemas em questão são: PICS (Platform for Internet Content Selection),
- os metadados simples da Web, mapa de sites e outras ferramentas de navegação
- e P3P (Platform for Privacy Preferences Project), descritos a seguir: 
-\end_layout
-
-\begin_layout Standard
-• PICS.
- O modelo e sintaxe RDF é adequado para representar rótulos de PICS, que
- foi originalmente desenvolvido para ajudar pais e professores a controlar
- o que as crianças acessam na Internet, além de facilitar outros usos de
- rótulos, incluindo assinatura de código e privacidade.
- A RDF Schema, no entanto, não fornece um mapeamento de propósito geral
- de sistemas de avaliação de PICS dentro de uma representação de RDF.
+A especificação do RDFS foi diretamente pensada levando em consideração
+ casos de uso específicos e imediatos.
+ Seus criadores esperam que outros usos futuros compartilhem características
+ parecidas e que assim seja possível usar as classes básicas já projetadas.
+ Os casos de uso em questão são: a Platform for Internet Content Selection
  
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PICS"
+description "Platform for Internet Content Selection"
+
+\end_inset
+
+(PICS), os metadados simples da Web, mapa de sites e outras ferramentas
+ de navegação, e a Platform for Privacy Preferences Project 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "P3P"
+description "Platform for Privacy Preferences Project)"
+
+\end_inset
+
+(P3P), descritos a seguir: 
 \end_layout
 
-\begin_layout Standard
-• Metadados simples da Web.
- Uma aplicação óbvia da RDF está na descrição de páginas da Web.
+\begin_layout Description
+PICS O modelo e sintaxe RDF é adequado para representar rótulos em PICS,
+ que foi originalmente desenvolvido para ajudar pais e professores a controlar
+ o que as crianças acessam na Internet.
+ Ele também facilita outros usos de rótulos, incluindo assinatura de código
+ e privacidade.
+ O RDFS, no entanto, não fornece um mapeamento de propósito geral de sistemas
+ de avaliação de PICS dentro de uma representação de RDF.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Criaram uma solucao que nao atende a um caso de uso que eles proprios propuseram
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Metadados
+\begin_inset space \space{}
+\end_inset
+
+simples
+\begin_inset space \space{}
+\end_inset
+
+da
+\begin_inset space \space{}
+\end_inset
+
+Web Uma aplicação óbvia da RDF está na descrição de páginas da Web.
  Essa é uma das funções básicas da iniciativa Dublin Core.
  O Dublin Core 
 \begin_inset CommandInset citation
@@ -722,60 +860,116 @@ key "DCMIPro841"
  é um conjunto de 15 elementos largamente aplicáveis para descrever recursos
  da Web para habilitar sua descoberta.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Cadê o RDFS aqui?
 \end_layout
 
-\begin_layout Standard
-• Mapa de sites e outras ferramentas de navegação.
- A especificação da RDF Schema fornece recursos suficientes para criar modelos
- RDF que representam sistemas hierárquicos para representar taxonomia de
- assuntos.
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Mapa
+\begin_inset space \space{}
+\end_inset
+
+de
+\begin_inset space \space{}
+\end_inset
+
+sites
+\begin_inset space \space{}
+\end_inset
+
+e
+\begin_inset space \space{}
+\end_inset
+
+outras
+\begin_inset space \space{}
+\end_inset
+
+ferramentas
+\begin_inset space \space{}
+\end_inset
+
+de
+\begin_inset space \space{}
+\end_inset
+
+navegação A especificação do RDFS fornece recursos suficientes para criar
+ modelos RDF que representem sistemas hierárquicos para representar taxonomia
+ de assuntos.
  Mapas de sites, dicionários e esquemas de classificação de bibliotecas
  são exemplos bem conhecidos de sistemas hierárquicos.
  
 \end_layout
 
-\begin_layout Standard
-• P3P.
- A plataforma Projeto de Preferências de Privacidade requer uma gramática
- para construção de declarações sobre práticas de coleção de dados e preferência
-s pessoais como exercício sobre estas práticas, assim como uma sintaxe de
- dados estruturados de troca.
- O uso de um esquema de metadados para descrever a estrutura formal de descrição
- de práticas de privacidade permitirá privacidade na prática de dados para
- serem utilizados junto com outros metadados em uma consulta durante descoberta
- de recurso, e permitirá a um agente de software agir de acordo com a privacidad
-e dos metadados usando as mesmas técnicas como utilizadas para outros metadados
+\begin_layout Description
+P3P A plataforma P3P requer uma gramática para construção de declarações
+ sobre práticas de coleção de dados e preferências pessoais, como exercício
+ sobre estas práticas, assim como uma sintaxe de dados estruturados de troca.
+ O uso de um esquema de metadados, para descrever a estrutura formal de
+ descrição de práticas de privacidade, permitirá privacidade na prática
+ de dados para serem utilizados junto com outros metadados em uma consulta
+ durante descoberta de recurso
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Sentença não faz sentido.
+\end_layout
+
+\end_inset
+
+.
+ Ele também permitirá a um agente de software agir de acordo com a privacidade
+ dos metadados usando as mesmas técnicas como utilizadas para outros metadados
  descritivos.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nunca tinha ouvido falar de PICS ou P3P, tem certeza do que está falando?
+ Não está complicando demais para explicar RDFS, algo que você nem usa!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Convenções.
-
-\series default
- (a) Nomes de Classe têm a primeira letra maiúscula (Ex: rdfs:Resource);
- (b) Palavras adicionais ao nome de classe são também maiúsculas (Ex: rdfs:Const
-raintProperty); (c) Nomes de propriedades não têm a primeira letra não maiúscula
- (Ex: rdfs:domain); e (d) Palavras adicionais ao nome são maiúsculas (Ex:
- rdfs:subClassOf).
+RDFS usa algumas convenções: (a) URIs têm a primeira letra maiúscula (Ex:
+ rdfs:Resource); (b) Palavras adicionais à URI da classe são também maiúsculas
+ (Ex: rdfs:ConstraintProperty); (c) URIs de propriedades iniciam com letras
+ minúsculas (Ex: rdfs:domain); e (d) Palavras adicionais à URI de propriedades
+ são maiúsculas (Ex: rdfs:subClassOf).
  
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Restrições.
-
-\series default
- A RDF Schema serve também para especificar restrições visando um modelo
+O RDF Schema serve também para especificar restrições visando um modelo
  RDF consistente.
- Exemplo de restrições são rdfs:domain e rdfs:range que se refere a propriedades
- de uso e a regra que rdfs:subPropertyOf e rdfs:subClassOf não devem formar
- laços.
- A RDF Schema usa as propriedades de restrição para definir como suas propriedad
-es podem ser utilizadas
+ Exemplo de restrições são rdfs:domain e rdfs:range que se referem a propriedade
+s de uso 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+que se referem a propriedades de uso?????
+\end_layout
+
+\end_inset
+
+e a regra que rdfs:subPropertyOf e rdfs:subClassOf não devem formar laços.
+ RDFS usa as propriedades de restrição para definir como suas propriedades
+ podem ser utilizadas.
 \end_layout
 
 \begin_layout Section
@@ -783,6 +977,15 @@ Ontologia
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ligação !!!!!!
+\end_layout
+
+\end_inset
+
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -847,7 +1050,7 @@ a dos dados da aplicação, os dados fluem entre aplicações em um único domí
  No terceiro nível, os dados podem ser combinados a partir de diferentes
  domínios, sendo suficientemente independentes para serem recuperados e
  combinados com outras fontes de dados.
- Finalmente no quarto nível, é possível inferir novos dados a partir dos
+ Finalmente, no quarto nível, é possível inferir novos dados a partir dos
  existentes e compartilha-los entre aplicações sem requerer interferência
  humana 
 \begin_inset CommandInset citation
@@ -861,22 +1064,7 @@ key "Sugumaran2011"
 \end_layout
 
 \begin_layout Standard
-Uma ontologia é um sistema de organização e representação do conhecimento,
- em inglês 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "KOS"
-description "Knowledge Organization System"
-
-\end_inset
-
-, que é uma estrutura conceitual e computacional que permite representar
- o conhecimento, de qualquer domínio, por meio de entidades, classificações,
- relações semânticas, regras e axiomas.
-\end_layout
-
-\begin_layout Standard
-Contudo, não existe um consenso sobre uma exata definição para ontologias.
+Não existe um consenso sobre uma exata definição para ontologias.
  Segundo 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -889,8 +1077,16 @@ key "gruber1995toward"
 \end_layout
 
 \begin_layout Standard
-Uma ontologia é especificada por meio de componentes básicos que são as
- classes, relações, axiomas e instâncias.
+Neste projeto, consideraremos que uma ontologia é um sistema de organização
+ e representação do conhecimento.
+ Uma estrutura conceitual e computacional que permite representar o conhecimento
+, de qualquer domínio, por meio de entidades, classificações, relações semântica
+s, regras e axiomas.
+\end_layout
+
+\begin_layout Standard
+Uma ontologia é especificada por meio de componentes básicos:s classes,
+ relações, axiomas e instâncias.
  As classes, o foco da maioria das ontologias, são utilizadas para descrever
  os conceitos de um domínio, possibilitando a organização das classes em
  um sistema lógico e hierárquico contendo subclasses que representam conceitos
@@ -908,7 +1104,17 @@ key "noy2001ontology"
  ou terem uma cardinalidade definida.
  Os axiomas são utilizados para modelar regras assumidas como verdadeiras
  no domínio em questão, de modo que seja possível associar o relacionamento
- entre os indivíduos, além de fornecer características descritivas e lógicas
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+associar o relacionamento????
+\end_layout
+
+\end_inset
+
+entre os indivíduos, além de fornecer características descritivas e lógicas
  para os conceitos.
  Para 
 \begin_inset CommandInset citation
@@ -917,12 +1123,12 @@ key "uschold1996ontologies"
 
 \end_inset
 
- os axiomas são especificados para definir a semântica e significado dos
- termos (classes e propriedades) e sugerem que a fase de definição dos axiomas
+, os axiomas são especificados para definir a semântica e significado dos
+ termos (classes e propriedades) e sugere que a fase de definição dos axiomas
  (especificação da ontologia) é a mais difícil na construção de ontologias.
  Por fim, os indivíduos, ou instâncias das classes, são utilizados para
  representar elementos específicos, ou seja, os próprios dados, que, juntamente
- com a definição de uma ontologia, constituem a base de conhecimento 
+ com a definição de uma ontologia, constituem uma base de conhecimento 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "noy2001ontology"
@@ -937,10 +1143,20 @@ Web Ontology Language
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CONEXÃO !!!!
+\end_layout
+
+\end_inset
+
 A Web Ontology Language (OWL) foi recomendada pelo W3C em 2004 para representar
  e compartilhar ontologias na Web.
  Essa linguagem foi projetada para aplicações que necessitam processar o
- conteúdo da informação em vez de apenas apresentar informações em nós 
+ conteúdo da informação, em vez de apenas apresentar informações em nós
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "McGuinness2004"
@@ -949,12 +1165,12 @@ key "McGuinness2004"
 
 .
  OWL é uma linguagem que permite que semântica seja explicitamente associada
- ao conteúdo dos dados na web e formalmente especificada através de ontologias,
+ ao conteúdo dos dados na web e formalmente especificada, através de ontologias
  compartilhadas na Internet.
 \end_layout
 
 \begin_layout Standard
-A OWL 2, de abril de 2008, é a versão mais recente da linguagem 2.
+A OWL 2, de abril de 2008, é a versão mais recente da linguagem.
  De acordo com as especificações do W3C
 \begin_inset Foot
 status open
@@ -966,7 +1182,7 @@ http://www.w3.org/TR/owl2-overview
 \end_inset
 
 , a OWL 2 adicionou três novos perfis (sub-linguagens) aos perfis DL e Full
- já existentes: OWL 2 EL, OWL 2 QL e OWL RL 
+ já existentes: OWL EL, OWL QL e OWL RL 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Perfis-da-OWL"
@@ -1000,7 +1216,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Perfis da OWL
+Perfis da linguagem OWL
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Perfis-da-OWL"
@@ -1049,7 +1265,7 @@ key "McGuinness2004"
 DL (Description Logic):
 \series default
  É para aplicações que necessitam de máxima expressividade, enquanto mantém
- a computabilidade (todas as conclusões são garantidos para ser computáveis)
+ a computabilidade (todas as conclusões são garantidos de ser computáveis)
  e decidibilidade (todas as computações terminarão em tempo finito) 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1067,11 +1283,11 @@ key "McGuinness2004"
 \series bold
 EL:
 \series default
- É baseado na família EL++ de lógica descritiva (Description Logic), esse
- perfil é particularmente útil em aplicações utilizando ontologias que contêm
- um grande número de propriedades e/ou classes.
- Além disso, o OWL 2 EL utiliza um padrão comum utilizado em ontologias
- para conceitos e planejamento, ou seja, a combinação de conjunção e qualidades
+ É baseado na família EL++ de lógica descritiva (Description Logic).
+ Esse perfil é particularmente útil em aplicações utilizando ontologias
+ que contêm um grande número de propriedades e/ou classes.
+ Além disso, o OWL EL utiliza um padrão comum utilizado em ontologias para
+ conceitos e planejamento, ou seja, a combinação de conjunção e qualidades
  existenciais.
 \end_layout
 
@@ -1105,6 +1321,15 @@ RL:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O que esse parágrafo tem haver com o resto do texto????
+\end_layout
+
+\end_inset
+
 Em um Sistema de Apoio a Decisão (SAD), ontologias podem ser usadas para
  modelar o domínio da aplicação deste sistema, no caso do SustenAgro, além
  deste caso, é utilizado também para a elaboração de interfaces de usuário,
@@ -1116,6 +1341,15 @@ Embrapa
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O que essa seção tem haver com o resto do texto????
+\end_layout
+
+\end_inset
+
 A Empresa Brasileira de Pesquisas Agropecuárias (Embrapa) foi criada em
  abril de 1973 e é vinculada ao Ministério da Agricultura, Pecuária e Abastecime
 nto.
@@ -1131,6 +1365,19 @@ nto.
  Neste sentido foi desenvolvido em conjunto com a USP de São Carlos, o software
  SustenAgro, que visa trazer de forma automatizada as informações sobre
  sustentabilidade da cultura de cana-de-açúcar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E o que se conclui? O que este capítulo tem haver com o seu projeto de mestrado?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
