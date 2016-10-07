@@ -80,10 +80,38 @@
 \begin_body
 
 \begin_layout Standard
-Após uma pesquisa bibliográfica foi possivel constatar que existem varios
- software que se propoem a trabalhar com Ontologias, e foi encontrado somente
- um software com a capacidade de visualização dessas ontologias em formato
- de grafos.
+Após uma pesquisa bibliográfica, foi possivel constatar que existem varios
+ software que se propõem a trabalhar com a edição de Ontologias e foi encontrado
+ somente um software com a capacidade de visualização dessas ontologias
+ em formato de grafos.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Melhore.
+ Porque você colocou os exemplos que estão aqui? Explique isso antes de
+ começar.
+ Novamente não há conexão com o próximo parágrafo.
+ Porque começa com o Protege?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O FluentEditor é para pessoas sem experiencia em OWL.
+ POrque ele não é citado?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -91,20 +119,11 @@ Protégé
 \end_layout
 
 \begin_layout Standard
-O Protégé
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-http://protege.stanford.edu/products.php
-\end_layout
-
-\end_inset
-
- é uma plataforma livre, de código aberto que fornece uma comunidade de
- usuários em crescimento, com um conjunto de ferramentas para a construção
- de modelos de dominio e aplicações baseados no conhecimento de ontologias.
- Sua interface é baseada em formularios conforme é mostrado na Figura 
+O Protégé [ponha uma Ref] é uma plataforma livre, de código aberto que tem
+ uma comunidade de usuários em crescimento.
+ Ele tem um conjunto de ferramentas para a construção de modelos de dominio
+ e aplicações baseados no conhecimento de ontologias.
+ Sua interface é baseada em formularios, conforme mostrado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Protégé"
@@ -113,8 +132,9 @@ reference "fig:Protégé"
 
 .
  Pelo fato de ser baseado em formulários, a complexidade aumenta consideravelmen
-te e também este softwware não é via Web, portanto, existe a necessidade
- de instalação do mesmo na maquina.
+te.
+ O Protégé não é uma aplicação Web, portanto, existe a necessidade de instalação
+ do mesmo nos computadores dos usuários.
  Apesar da interface necessitar de um conhecimento mais aprimorado, os recursos
  oferecidos pelo Protégé não são encontrados em outros softwares.
 \end_layout
@@ -130,6 +150,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Protege_3.png
+	lyxscale 60
 	width 100col%
 
 \end_inset
@@ -159,15 +180,26 @@ name "fig:Protégé"
 \end_layout
 
 \begin_layout Standard
-Seu ambiente de edição ontologia é rica em recursos e com suporte total
- para o OWL 2, e de ligações diretas em memória para a recuperação lógica
- via reasoners como o HermiT e Pellet.
+O ambiente para edição de ontologias do Protégé é rico em recursos e tem
+ suporte total para a OWL 2.
+ Ele também tem vários reasoners, para a análise lógica de ontologias, como
+ o HermiT e Pellet.
  Ele suporta a criação e edição de uma ou mais ontologias em um único espaço
- de trabalho através de uma interface de usuário totalmente personalizável.
+ de trabalho, através de uma interface de usuário totalmente personalizável.
  Suas ferramentas de visualização permitem a navegação entre as relações
- da ontologia e os apoios auxiliares permitem uma explicação no rastreamento
- de inconsistências.
+ presentes em ontologias e ferramentas para rastreamento de inconsistências.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E daí.
+ Porque o Protege nao resolve o problema? Qual a ligacao com o proximo tópico.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -175,16 +207,26 @@ OWLViz
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O que OWLViz faz? Ele não é apenas um visualizador?
+\end_layout
+
+\end_inset
+
 O OWLViz é projetado para ser usado com o editor Protege-OWL.
- Ele permite hierarquias de classe em uma Ontologia OWL para ser visto e
- incrementalmente navegado, permitindo a comparação da hierarquia de classes
- afirmada e a hierarquia de classe inferida.
- O OWLViz integra com o editor Protege-OWL, utilizando o mesmo esquema de
- cores de modo que as classes primitivas e definidas podem ser distinguidos,
- mudanças computados para a hierarquia de classes pode ser visto claramente,
- e os conceitos inconsistentes são destacadas em vermelho, tem a facilidade
- para salvar ambos os pontos de vista afirmados e inferidos da hierarquia
- de classes para vários formatos gráficos, incluindo PNG, JPEG, e SVG.
+ Ele permite a visualização de hierarquias de classes em uma Ontologia OWL,
+ permitindo a comparação da hierarquia de classes afirmada e a hierarquia
+ de classes inferida.
+ O OWLViz se integra com o editor Protege-OWL, utilizando o mesmo esquema
+ de cores, de modo que as classes primitivas e definidas podem ser distinguidas.
+ Mudanças computadas para a hierarquia de classes podem ser vistas claramente
+ e os conceitos inconsistentes são destacados em vermelho.
+ O OWLViz tem a facilidade de salvar os pontos de vista, afirmados e inferidos
+ na hierarquia de classes, para vários formatos gráficos, incluindo PNG,
+ JPEG, e SVG.
 \end_layout
 
 \begin_layout Standard
@@ -195,12 +237,12 @@ reference "fig:OWLViz"
 
 \end_inset
 
- pode ser observado a Tela Principal do Protégé com o uso do plugin OWLViz.
+, pode ser observada a tela principal do Protégé com o plugin OWLViz.
  Assim como o Protégé, é necessário a instalação deste plugin no computador,
- alem disse, tem que se observar a versão do plugin se é compativel com
+ além disso, tem que se observar se a versão do plugin é compatível com
  a versão do Protégé instalada.
- Caso faça atualização no software Protégé, este plugin terá que ser atualizado
- também.
+ Caso se faça a atualização no software Protégé, esse plugin terá que ser
+ atualizado também.
 \end_layout
 
 \begin_layout Standard
@@ -225,7 +267,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela Principal do Software Protégé com o Plugin OWLViz 
+Tela Principal do Software Protégé com o Plugin OWLViz.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:OWLViz"
@@ -245,22 +288,46 @@ name "fig:OWLViz"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E o Atempto plugin para o Protege?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 WebProtégé
 \end_layout
 
 \begin_layout Standard
-WebProtégé é um ambiente de desenvolvimento de ontologias para a Web que
- torna mais fácil para criar, carregar, modificar e compartilhar ontologias
- para visualização de colaboração e edição.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Conexão?
+\end_layout
+
+\end_inset
+
+O WebProtégé é um ambiente de desenvolvimento de ontologias para a Web que
+ torna mais fácil criar, carregar, editar e compartilhar ontologias de maneira
+ colaborativa.
  Ele apoia plenamente as últimas atualizações da Web Ontology Language 2
  (OWL).
  Com sua interface de usuário altamente configurável, é possivel criar o
  ambiente perfeito para iniciantes e experts, os recursos de colaboração,
  incluindo compartilhamento e permissões, notas e discussões, entre outros.
- Ele é compativel com os mais variados tipos, incluindo, RDF / XML, Turtle,
- OWL / XML, OBO, e outros formatos disponíveis para upload e download de
- ontologia.
+ Ele é indicado para o desenvolvimento de ontologias por grupos de especialistas
+ de diferentes instituições (frequentemente separados por grandes distâncias),
+ um senário cada vez mais comum nos dias de hoje.
+ Ele é compativel com várias formatos de serialização, incluindo, RDF/XML,
+ Turtle, OWL/XML, OBO, disponíveis para upload e download de ontologias.
 \end_layout
 
 \begin_layout Standard
@@ -317,6 +384,16 @@ reference "fig:WebProtégé"
  Por ser desenvolvido para Web, permite o compartilhamento de ontologias
  muito mais facilmente, pois basta ter uma conta no site para poder salvar
  e criar projetos com as mesmas caracteristicas da versão Desktop.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E porque nao usar o WebProtege?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -324,17 +401,17 @@ WebProtégé: Supporting the Creation of ICD-11
 \end_layout
 
 \begin_layout Standard
-WebProtege é uma interface Web altamente personalizável para navegação e
- edição de ontologias, que fornece suporte para a colaboração.
- Utilizando essa ferramenta, foi realizada uma personalização do WebProtégé
- para apoiar a Organização Mundial da Saúde com o desenvolvimento colaborativo
- da 11ª revisão da Classificação Internacional de Doenças (CID-11).
- A Classificação Internacional de Doenças (CID) é um padrão global pública
- que organiza e classifica informações sobre doenças e problemas de saúde
- relacionados, as Autoridades de Saúde usam o CID em todos os países membros
- das Nações Unidas para compilar estatísticas básicas de saúde, para monitorar
- os gastos relacionados com a saúde, e para informar e auxiliar nas decisões
- políticas.
+O WebProtege tem uma interface Web altamente personalizável para navegação
+ e edição de ontologias, com suporte à colaboração.
+ O grupo criador do Protégé, BMIR - Stanford Center for Bioinformatics Research,
+ realizou uma personalização do WebProtégé para ajudar a Organização Mundial
+ da Saúde (OMS) com o desenvolvimento colaborativo da 11ª revisão da Classificaç
+ão Internacional de Doenças (CID-11).
+ A CID é um vocabulário padrão global que organiza e classifica informações
+ sobre doenças e problemas de saúde relacionados.
+ As autoridades de saúde usam o CID em todos os países membros das Nações
+ Unidas para compilar estatísticas básicas de saúde, para monitorar gastos
+ relacionados com a saúde, e para informar e auxiliar nas decisões políticas.
  Nos Estados Unidos, o uso do CID é também uma exigência para todo o faturamento
  médico e, portanto, tem um grande impacto sobre muitos aspectos e cuidados
  de saúde em todo o mundo.
@@ -342,14 +419,22 @@ WebProtege é uma interface Web altamente personalizável para navegação e
 \end_layout
 
 \begin_layout Standard
+A OMS decidiu que o CID-11 seria desenvolvido como uma ontologia, e não
+ um vocabulário.
+ Para isso, seus muitos especialistas, em diversos países do mundo, deveriam
+ ter acesso a uma ferramenta que permitisse o desenvolvimento cooperativo
+ do CID-11.
+ O WebProtégé era uma solução, mas os especialistas da OMS, em sua maioria,
+ conhecem ontologias mas não a linguagem OWL (usada no Protégé).
+ Por isso, a equipe do BMIR desenvolveu uma interface específica para o
+ desenvolvimento do CID-11.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -364,7 +449,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela Principal do Software WebProtégé modificado para dar suporte ao ICD-11
+Tela principal do software WebProtégé modificado para dar suporte ao ICD-11.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -377,10 +462,6 @@ name "fig:ICD-11"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -397,16 +478,28 @@ reference "fig:ICD-11"
 
 \end_inset
 
- mostra um diagrama de arquitetura do WebProtégé utilizado no contexto CID.
- É usado no lado cliente os serviços do servidor do WebProtégé para exibir
- informações paa o usuário, e no lado servidor, ele se conecta ao ambiente
- de colaboração para acessar a ontologia e os serviços de colaboração.
- Em seu repositório de ontologias fica armazenado as ontologias disponíveis
+ mostra uma tela do iCAT, uma aba do WebProtégé customized para o contexto
+ do CID-11.
+ iCaT é usado, no lado cliente, para exibir informações para o usuário num
+ formato que ele está acostumado.
+ No lado do servidor, ele se conecta ao ambiente de colaboração para acessar
+ a ontologia e os serviços de colaboração.
+ Em seu repositório de ontologias, ficam armazenadas as ontologias disponíveis
  para os clientes.
- O WebProtégé acessa o BioPortal que é um repositório de aproximadamente
- 200 ontologias biomédias e terminologias, na qual fornece acesso via serviços
- REST e assim, permite realizar pesquisas em diferentes ontologias e ter
- acesso a informação sobre os termos especificos.
+ O WebProtégé acessa o BioPortal, que é um repositório com aproximadamente
+ 200 ontologias terminologias da área biomédica, para ter acesso, via serviços
+ REST, a APIs que permitem realizar pesquisas em diferentes ontologias e
+ ter acesso à informações sobre termos específicos.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E o que tem isso haver com seu trabalho? Porque esse plugin está aqui?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -414,21 +507,21 @@ WebVOWL
 \end_layout
 
 \begin_layout Standard
-O VOWL
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-http://www.http://vowl.visualdataweb.org/
-\end_layout
+A Visual Notation for OWL Ontologies 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "VOWL"
+description "Visual Notation for OWL Ontologies"
 
 \end_inset
 
- é uma linguagem visual bem especificada para a representação orientada
- para o utilizador de ontologias.
- Ele define representações gráficas para a maioria dos elementos do Web
- Ontology Language (OWL), que são combinados para um layout gráfico direcionado,
- visualizando a ontologia conforme é mostrado na Figura 
+(VOWL) [REF Lohmann, S., Negru, S., Haag F., Ertl, T.: Visualizing Ontologies
+ with VOWL.
+ Semantic Web 7(4): 399-419 (2016) ] é uma linguagem visual focada à representaç
+ão orientada à usuários de ontologias.
+ Ela define representações gráficas para a maioria dos elementos da OWL.
+ Elas são combinadas em um layout gráfico direcionado para visualização
+ da ontologia, conforme é mostrado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:WebVOWL"
@@ -439,7 +532,25 @@ reference "fig:WebVOWL"
  Em contraste com trabalhos relacionados, VOWL aponta para uma representação
  intuitiva e abrangente que também é compreensível para os usuários menos
  familiarizados com ontologias.
- Ele é um aplicativo independente inteiramente baseado em padrões web abertos.
+ A VOWL está disponível em várias implementações, incluindo o WebVOWL
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://vowl.visualdataweb.org/webvowl.html
+\end_layout
+
+\end_inset
+
+, um aplicativo web independente inteiramente baseado em padrões abertos
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WebVOWL"
+
+\end_inset
+
+).
  
 \end_layout
 
@@ -485,10 +596,20 @@ name "fig:WebVOWL"
 \end_layout
 
 \begin_layout Standard
-O VOWL serve unicamente como visualizador de ontologia em formato de grafos,
- não sendo possivel sua edição.
- Outra situação, no VOWL é que também não é possivel a resolução da ontologia
- (REASONER), pois o mesmo não tem tal recurso.
+O WebVOWL serve unicamente como visualizador de ontologias em formato de
+ grafo, não sendo possível edição.
+ Ele também não permite a validação da ontologia, usando um reasoner, pois
+ não tem interface para o acoplamento desses.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+E daí, algum comentario sobre como isso se encaixa no seu trabalho?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -503,16 +624,18 @@ reference "tab:ComparacaoSoftware"
 
 \end_inset
 
-demostra todas as caracteristicas e funcionalidades de cada software.
- O Plugin OWLViz, utiliza-se do Protégé, e portanto as caracteristicas de
- Reasoner, são trabalhadas aqui como do próprio Protégé e não do plugin.
+ foi criada para mostrar as características e funcionalidades, relevantes
+ para essa proposta, de cada software.
+ O Plugin OWLViz, utiliza-se do Protégé e, portanto, as características
+ de Reasoner do Protégé são mostradas na tabela (o plugin não tem reasoners
+ próprios).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -919,6 +1042,20 @@ name "tab:ComparacaoSoftware"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+A conclusao de um capitulo nao pode ser uma tabela! Faca algum tipo de conclusao
+ sobre o que foi paresentado nela.
 \end_layout
 
 \end_inset
